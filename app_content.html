@@ -1,0 +1,2156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Apps Builder</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Apps Builder">
+	<meta name="Keyword" content="Apps Builder">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/icon" href="images/favicon.png">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<!-- Dashboard warppper Start -->
+	<div class="ap_dashboard_wrapper">
+		<!-- left menus stasrt -->
+		<div class="left_menus_part">
+			<div class="main_menu">
+				<div class="app_logo_cont">
+					<span class="app_logo">
+						<img src="images/app_logo.png" alt="" align="img-fluid">
+					</span>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">
+							<span class="m_icon"><i class="fas fa-tachometer-alt"></i></span>
+							<span class="m_label">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="app_build.html" class="active">
+							<span class="m_icon"><i class="fas fa-tools"></i></span>
+							<span class="m_label">Build</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-bullseye"></i></span>
+							<span class="m_label">Marketing</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-envelope-open-text"></i></span>
+							<span class="m_label">Messaging</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-chart-line"></i></span>
+							<span class="m_label">Analytics</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-user-friends"></i></span>
+							<span class="m_label">Customers</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- submenu div -->
+			<div class="sub_menus">
+				<div class="progress_bar">
+					<div class="prog_bar">
+						
+					</div>
+					<div class="prog_text">
+						<h5>1 of 3</h5>
+						<span>Sections complete</span>
+					</div>
+				</div>
+				<h5 class="menu_head heaer_border">App Appearance</h5>
+				<ul class="menus">
+					<li>
+						<a href="app_build.html"><span class="m_icons">
+							<i class="far fa-edit"></i></span>
+							<span class="m_label">Themes</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="build_image.html"><span class="m_icons">
+							<i class="far fa-image"></i></span>
+							<span class="m_label">Image</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+				<h5 class="menu_head heaer_border">Content & Layout</h5>
+				<ul class="menus">
+					<li>
+						<a href="app_content.html" class="active"><span class="m_icons">
+							<i class="far fa-file-alt"></i></span>
+							<span class="m_label">content</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="navigation.html"><span class="m_icons">
+							<i class="fas fa-bars"></i></span>
+							<span class="m_label">Navigation</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+				<h5 class="menu_head heaer_border">App Appearance</h5>
+				<ul class="menus">
+					<li>
+						<a href="submit_app.html">
+							<span class="m_icons">
+							<i class="fas fa-paper-plane"></i></span>
+							<span class="m_label">submit App</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="globel_setting.html">
+							<span class="m_icons">
+							<i class="fas fa-cogs"></i></span>
+							<span class="m_label">Globle Settings</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- submenu div -->
+		</div>
+		<!-- left menus end -->
+		<!-- dashboard content Start -->
+		<div class="dashboard_content">
+			<div class="dashboard_content_inr">
+				<div class="white_box image_build_page">
+					<!-- Tabs start -->
+					<div class="build_tabs">
+						<ul class="tab_menu">
+							<li data-tab="editor" class="active tab_link">Editor</li>
+							<li data-tab="preview" class="tab_link">Preview</li>
+						</ul>
+					</div>
+					<!-- Tabs end -->
+					<!-- Editor tab content start -->
+					<div class="tab_content active" id="editor">
+						<!-- right part -->
+						<div class="right_build">
+							<div class="app_build_img">
+								<div class="app_screen">
+									<div class="app_screen_inr">
+										<div class="app_header">
+											<div class="logos">
+												<img src="images/app_logo.png" alt="logo">
+											</div>
+										</div>
+										<div class="app_panel">
+											<ul class="drag_ap_list sortable_list drag_lists">
+												<li class="drag_tabs">
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-video"></i>
+														</span>
+														<span class="txts">Video gallery</span>
+														<span class="tab_types">Video</span>
+													</div>
+													<!-- tab content edit links -->
+													<div class="tab_overlay_links">
+														<div class="overlay_links">
+															<a href="app_build.html"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+															<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
+															<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
+															<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+														</div>
+													</div>
+													<!-- tab content edit links -->
+												</li>
+												<li class="drag_tabs">
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-hamburger"></i>
+														</span>
+														<span class="txts">Food</span>
+														<span class="tab_types">Food</span>
+													</div>
+													<!-- tab content edit links -->
+													<div class="tab_overlay_links">
+														<div class="overlay_links">
+															<a href="app_build.html"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+															<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
+															<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
+															<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+														</div>
+													</div>
+													<!-- tab content edit links -->
+												</li>
+											</ul>
+										</div>
+										<div class="app_tabbar">
+											<ul class="tabbar_menu drag_lists" id="sortable_menu">
+												<li class="active">
+													<div class="drag_tabs_text">
+														<i class="fas fa-home"></i>
+														<span class="txts">Home</span>
+														<span class="tab_types">Home</span>
+													</div>
+												</li>
+												<li>
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-graduation-cap"></i>	
+														</span>
+														<span class="txts">School</span>
+														<span class="tab_types">School</span>
+													</div>
+												</li>
+												<li>
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-dumbbell"></i>
+														</span>
+														<span class="txts">Fitness</span>
+														<span class="tab_types">Fitness</span>
+													</div>
+												</li>
+												<li>
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-map-marker-alt"></i>
+														</span>
+														<span class="txts">About us</span>
+														<span class="tab_types">About us</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- right part -->
+						<!-- left part -->
+						<div class="left_build">
+							<div class="app_content_box">
+								<button type="button" class="green_button" data-toggle="modal" data-target="#add_feature_modal">
+									<i class="fas fa-plus"></i>Add features and content
+								</button>
+								<div class="inactive_tab_cntnr">
+									<h5>Inactive Tabs</h5>
+									<div class="lists">
+										<div class="ap_tab_group">
+											<span class="icons">
+												<i class="fas fa-home"></i> 
+											</span>
+											<span class="icn_label">Basic tabs</span>
+										</div>
+										<ul class="drag_ap_list sortable_list drag_lists">
+											<li class="drag_tabs">
+												<div class="drag_tabs_text">
+													<span class="icon">
+														<i class="far fa-image"></i>
+													</span>
+													<span class="txts">Gallery</span>
+													<span class="tab_types">Gallery</span>
+												</div>
+												<!-- tab content edit links -->
+												<div class="tab_overlay_links">
+													<div class="overlay_links">
+														<a href="app_build.html"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+														<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
+														<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
+														<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+													</div>
+												</div>
+												<!-- tab content edit links --> 
+											</li>
+											<li class="drag_tabs">
+												<div class="drag_tabs_text">
+													<span class="icon">
+														<i class="fas fa-utensils"></i>
+													</span>
+													<span class="txts">Restaurant</span>
+													<span class="tab_types">Restaurant</span>
+												</div>
+											</li>
+											<li class="drag_tabs">
+												<div class="drag_tabs_text">
+													<span class="icon">
+														<i class="fas fa-graduation-cap"></i>
+													</span>
+													<span class="txts">School</span>
+													<span class="tab_types">School</span>
+												</div>
+												<!-- tab content edit links -->
+												<div class="tab_overlay_links">
+													<div class="overlay_links">
+														<a href="app_build.html"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+														<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
+														<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
+														<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+													</div>
+												</div>
+												<!-- tab content edit links --> 
+											</li>
+											<li class="drag_tabs">
+												<div class="drag_tabs_text">
+													<span class="icon">
+														<i class="fas fa-dumbbell"></i>
+													</span>
+													<span class="txts">Fitness</span>
+													<span class="tab_types">Fitness</span>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- left part -->
+					</div>
+					<!-- Editor content end -->
+					<!-- preview content start -->
+					<div class="tab_content" id="preview">
+						<!-- right part -->
+						<div class="preview_build_ap">
+							<div class="build_mockup">
+								<div class="app_build_img">
+									<div class="app_screen">
+										<div class="app_screen_inr">
+											<div class="app_header">
+												<div class="logos">
+													<img src="images/app_logo.png" alt="logo">
+												</div>
+											</div>
+											<div class="app_panel">
+												<ul class="drag_ap_list">
+												<li class="drag_tabs">
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-video"></i>
+														</span>
+														<span class="txts">Video gallery</span>
+														<span class="tab_types">Video</span>
+													</div>
+												</li>
+												<li class="drag_tabs">
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-hamburger"></i>
+														</span>
+														<span class="txts">Food</span>
+														<span class="tab_types">Food</span>
+													</div>
+												</li>
+												<li class="drag_tabs">
+													<div class="drag_tabs_text">
+														<span class="icon">
+															<i class="fas fa-gavel"></i>
+														</span>
+														<span class="txts">Lawyer</span>
+														<span class="tab_types">Lawyer</span>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="app_tabbar">
+												<ul class="tabbar_menu">
+													<li class="active">
+														<div><i class="fas fa-home"></i>
+															<span class="txts">Home</span>
+														</div>
+													</li>
+													<li>
+														<div><i class="fas fa-graduation-cap"></i>
+															<span class="txts">school</span>
+														</div>
+													</li>
+													<li>
+														<div><i class="fas fa-dumbbell"></i>
+															<span class="txts">fitness</span>
+														</div>
+													</li>
+													<li>
+														<div><i class="fas fa-map-marker-alt"></i>
+															<span class="txts">About us</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- right part -->
+					</div>
+					<!-- preview content end -->
+				</div>
+			</div>
+		</div>
+		<!-- dashboard content end -->
+	</div>
+	<!-- Dashboard warppper Start -->
+	<!-- Feature Modal Start -->
+	<div id="add_feature_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Add tabs to your app</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+      			<div class="feature_tabs">
+      				<ul>
+      					<li class="active" data-tab="f_basic">Basic</li>
+      					<li data-tab="f_media">Media</li>
+      				</ul>
+      			</div>
+      			<!-- feature tab cotent Start -->
+      			<div class="feature_tab_content active" id="f_basic">
+					<div class="app_modules">
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="fas fa-home"></i></span>
+										<span class="h_texts">Home</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Add a Home Tab to your App. Create buttons on the Home tab to link to other tabs and share the app on social networks.
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<p>This feature can only be added once</p>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="fas fa-link"></i></span>
+										<span class="h_texts">External links</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Include web URLs in your App. Each web URL added will have its own tab in your App, which you can specify the icon and name.</p>
+									<p>
+										e.g. add your Twitter stream by including your Twitter URL
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#tb_setting_popups">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="fas fa-code"></i></span>
+										<span class="h_texts">content</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Copy and paste web content, or create from scratch, upload your images and embed Youtube videos, create limitless pages of content within your App.</p>
+									<p>
+										Our simple editor lets you easily create rich content pages without any technical skills. An advanced option is also provided if you want to write your own HTML
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#tab_content_modal">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="far fa-life-ring"></i></span>
+										<span class="h_texts">app structure</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Create hierarchical tiers within your App for greater organisation of tabs.</p>
+									<p>
+										This is useful for Apps with lots of information, to group tabs into sub tabs.
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#app_structure_modal">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="fas fa-portrait"></i></span>
+										<span class="h_texts">About Us</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Provide easy access to all your contact information and allow users to easily call, email, find directions, visit your website or share your App with one click.</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="fas fa-map-marked-alt"></i></span>
+										<span class="h_texts">Direction</span>
+									</div>
+									<!-- <div class="h_right">
+										<a href="#">show example</a>
+									</div> -->
+								</div>
+								<div class="module_box_text">
+									<p>
+										The Directions Tab allows you to give your customers directions to your business location directly from the App.</p>
+								</div>
+								<div class="module_box_bottom">
+	                                <button type="button" class="green_button close_modal" data-toggle="modal" data-target="#direction_modal">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+					</div>
+				</div>
+				<!-- feature tab cotent End -->
+				<!-- feature tab cotent start -->
+				<div class="feature_tab_content" id="f_media">
+					<div class="app_modules">
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="far fa-images"></i></span>
+										<span class="h_texts">Gallery</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Add Image galleries to your App using Apple's coverflow style navigation. Create as many galleries as you need, each Gallery will have its own tab, name and icon within your App.
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#gallery_modal">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="fas fa-video"></i></span>
+										<span class="h_texts">Video Directory</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										If you have great video content, the Video Directory allows you to upload and categorise your videos so App users can search for them easily.
+									</p>
+									<p>
+										e.g. Offer free video content to your App users, or require login to only allow registered users access to premium content.
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#video_gallery_modal"><i class="fas fa-plus"></i>
+										add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+						<!-- grid start -->
+						<div class="module_grid">
+							<div class="module_box">
+								<div class="module_box_head">
+									<div class="h_left">
+										<span class="h_icon"><i class="far fa-file-pdf"></i></span>
+										<span class="h_texts">PDF</span>
+									</div>
+								</div>
+								<div class="module_box_text">
+									<p>
+										Upload and display content from a PDF document within your app.
+									</p>
+								</div>
+								<div class="module_box_bottom">
+									<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#tb_setting_popups">
+									 <i class="fas fa-plus"></i>add to app
+									</button>
+								</div>
+							</div>
+						</div>
+						<!-- grid end -->
+					</div>
+				</div>
+				<!-- feature tab cotent End -->
+			  <!-- modal close start -->
+				<div class="libray_bottom">
+					<span class="close_modal green_button button_right">Close</span>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Feature Modal end -->
+	<!-- tab setting Modal start -->
+	<div id="tb_setting_popups" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Manage Content Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+				<div class="tabsetting_wrapper">
+					<!-- editor preview Start -->
+					<div class="tabsetting_preview">
+						<img src="images/app_mockup_2.png" alt="">
+						<div class="prev_screen">
+							<div class="previewinner">
+								<div class="tabbar_footer">
+									<span class="tabicon">
+										<i class="fas fa-home"></i>
+										<span class="texts">Home app</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- editor preview End -->
+					<!-- editor Start -->
+					<div class="tabsetting_editor">
+						<!-- setting row start -->
+						<div class="tb_setting_grp">
+							<div class="label">
+								<label>Tab Title</label>
+							</div>
+							<div class="inputwrapper">
+								<div class="inputs">
+									<input type="text" name="tab_title" placeholder="Enter Your Tab Title">
+								</div>
+								<div class="captions">
+									<span>The title shown in the app on the tab bar, side menu, or tier.</span>
+								</div>
+							</div>
+						</div>
+						<!-- setting row end -->
+						<!-- setting row start -->
+						<div class="tb_setting_grp">
+							<div class="label">
+								<label>Icon</label>
+							</div>
+							<div class="inputwrapper">
+								<div class="inputs">
+									<div class="tab_icons_bar">
+										<span class="icon_holder">
+											<i class="fas fa-home"></i>
+										</span>
+									</div>
+									<button type="button" class="green_button slect_icon_btn" data-toggle="modal" data-target="#icon_library_modal">select icon</button>
+									<div class="themecolor check_box">
+										<label>
+											<input type="checkbox" name="themecolor" value="color">
+											<span class="c_box"></span>
+											<span class="c_text">use theme colors</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- setting row end -->
+					</div>
+					<!-- editor end -->
+				</div>
+			  <!-- modal close start -->
+				<div class="libray_bottom text-right pad_top_30">
+					<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#external_url_modal">
+					  continue
+					</button>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- tab setting Modal end-->
+
+	<!-- External url Modal start -->
+	<div id="external_url_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Manage External URL Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+				<div class="external_urls_text">
+					<p>The External URL tab allows you to link external web URLs or uploaded files into your app.</p>
+				</div>
+				<div class="external_urls_container">
+					<div class="url_input">
+						<label class="label">Url</label>
+						<div class="input_wrap">
+							<input type="" name="url" placeholder="https://www.yourdomain.com">
+						</div>
+					</div>
+					<div class="url_file_upload">
+						<label class="label">Or</label>
+						<label class="upload_img_btn">
+							<input type="file" name="uploadfile">
+							Upload File
+						</label>
+					</div>
+				</div>
+				<div class="external_urls_list">
+					<ul>
+						<li>URLs must start with https:// or http://</li>
+						<li>URLs can be to any web link (e.g.: your Instagram feed, Pinterest, or your own website)</li>
+						<li>Uploaded files can be PDFs docs or images</li>
+						<li>In most cases progressive web apps will open the url in the device's native browser for maximum compatibility</li>
+					</ul>
+				</div>
+				<div class="external_radio radio_box">
+					<label>
+						<input type="radio" name="radios" value="1">
+						<span class="r_check"></span>
+						<span class="r_text">Inline browser - Web page appears inline with the app.</span>
+					</label>
+					<label>
+						<input type="radio" name="radios" value="2">
+						<span class="r_check"></span>
+						<span class="r_text">Overlay browser - Web page appears in a pop up rather than inline with the app.</span>
+					</label>
+					<label>
+						<input type="radio" name="radios" value="3">
+						<span class="r_check"></span>
+						<span class="r_text">External tab - Open the web page in a new browser tab outside of the App.</span>
+					</label>
+				</div>			  
+				<!-- modal close start -->
+				<div class="libray_bottom text-right">
+					<button type="button" class="green_button">
+					  Save
+					</button>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- External url Modal end-->
+	<!-- content Modal start -->
+	<div id="tab_content_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Manage Content Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+				<div class="tabsetting_wrapper">
+					<!-- editor preview Start -->
+					<div class="tabsetting_preview">
+						<img src="images/app_mockup_2.png" alt="">
+						<div class="prev_screen">
+							<div class="previewinner">
+								<div class="tabbar_footer">
+									<span class="tabicon">
+										<i class="fas fa-home"></i>
+										<span class="texts">Home app</span>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- editor preview End -->
+					<!-- editor Start -->
+					<div class="tabsetting_editor">
+						<!-- setting row start -->
+						<div class="tb_setting_grp">
+							<div class="label">
+								<label>Tab Title</label>
+							</div>
+							<div class="inputwrapper">
+								<div class="inputs">
+									<input type="text" name="tab_title" placeholder="Enter Your Tab Title">
+								</div>
+								<div class="captions">
+									<span>The title shown in the app on the tab bar, side menu, or tier.</span>
+								</div>
+							</div>
+						</div>
+						<!-- setting row end -->
+						<!-- setting row start -->
+						<div class="tb_setting_grp">
+							<div class="label">
+								<label>Icon</label>
+							</div>
+							<div class="inputwrapper">
+								<div class="inputs">
+									<div class="tab_icons_bar">
+										<span class="icon_holder">
+											<i class="fas fa-home"></i>
+										</span>
+									</div>
+									<button type="button" class="green_button slect_icon_btn">select icon</button>
+									<div class="themecolor check_box">
+										<label>
+											<input type="checkbox" name="themecolor" value="color">
+											<span class="c_box"></span>
+											<span class="c_text">use theme colors</span>
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- setting row end -->
+						<!-- setting row start -->
+						<div class="tb_setting_grp">
+							<div class="label">
+								<label>Background</label>
+							</div>
+							<div class="inputwrapper">
+								<div class="inputs">
+									<div class="color_picker preview_bg">
+									  <span class="color_preview"></span>
+									</div>
+									<span class="preview_bg green_button">select color</span>
+									<button class="green_button" data-toggle="modal" data-target="#library_modal">
+										Select Image
+									</button>
+									<button type="button" class="green_button clear_btn">Clear</button>
+								</div>
+								<div class="captions">
+									<span>The background of the main content area</span>
+								</div>
+							</div>
+						</div>
+						<!-- setting row end -->
+					</div>
+					<!-- editor end -->
+				</div>
+			  <!-- modal close start -->
+				<div class="libray_bottom text-right pad_top_30">
+					<button type="button" class="green_button close_modal" data-toggle="modal" data-target="#content_continue_modal">
+					  continue
+					</button>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- content Modal end-->
+	<!-- content continue Modal start -->
+	<div id="content_continue_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Manage Content Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+      			 <div class="content_text_box">
+					<textarea placeholder="Your Message Here..." name="chat_textarea" class="ckeditor_input"></textarea>
+			  	</div>
+			  	<div class="content_tab_text">
+			  		<p>
+						If you want to write your own HTML for this page then choose the 'HTML' button from the editor toolbar.
+					</p>
+					<div class="content_checkbox check_box">
+						<label>
+							<input type="checkbox" name="c_checkbox" value="Disable scrolling">
+							<span class="c_box"></span>
+							<span class="c_text">Disable scrolling</span>
+						</label>
+						<div>
+							<p>You should only use this option when the content of the page is short, or it may cut off on smaller devices</p>
+						</div>
+						<label>
+							<input type="checkbox" name="c_checkbox" value="favorites">
+							<span class="c_box"></span>
+							<span class="c_text">Add to favorites</span>
+						</label>
+						<div>
+							<p>This feature adds a button to the page that enables users to add it to their favorites</p>
+						</div>
+					</div>	
+
+			  	</div>		  
+				<!-- modal close start -->
+				<div class="libray_bottom text-right">
+					<button type="button" class="green_button">
+					  Save
+					</button>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- content continue Modal end-->
+	<!-- icon upload modal -->
+	<div id="icon_library_modal" class="icon_library_modal modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_middle">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	    	<div class="app_modules_head">
+				<h5>Image library: Select your Tab Icons</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+	      <div class="modal-body">
+				<!-- media search start -->
+				<div class="media_search_area">
+					<div class="search_bar">
+						<div class="form_group">
+							<input type="search" name="" placeholder="Search">
+							<button type="submit" class="search_btn">
+								<i class="fas fa-search"></i>
+							</button>
+						</div>
+					</div>
+					<div class="right_tags">
+						<label class="upload_img_btn">
+							<input type="file" name="uploadfile">
+							Upload Image
+						</label>
+					</div>
+				</div>
+				<!-- media search end -->
+				<!-- library Middle start -->
+				<div class="libray_middle tab_icon_library">
+					<div class="icon_material_wrap">
+						<span class="icon_material">
+							<i class="fas fa-home"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-address-book"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-address-card"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-address-card"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-ambulance"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-angry"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-archive"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-archway"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-arrow-alt-circle-down"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-arrow-alt-circle-left"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-arrow-alt-circle-left"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-arrow-alt-circle-right"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-arrow-alt-circle-up"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-atlas"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-atom"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-balance-scale"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-bell"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-bell-slash"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-bible"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-binoculars"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-birthday-cake"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-book"></i>
+						</span>	
+						<span class="icon_material">
+							<i class="fas fa-broom"></i>
+						</span>	
+						<span class="icon_material">
+							<i class="fab fa-twitter"></i>
+						</span>	
+						<span class="icon_material">
+							<i class="fab fa-google-plus-g"></i>
+						</span>	
+						<span class="icon_material">
+							<i class="fab fa-facebook-square"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-share-square"></i>
+						</span>	
+						<span class="icon_material">
+							<i class="fas fa-share-alt"></i>
+						</span>	
+						<span class="icon_material">
+							<i class="fas fa-user-friends"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-user"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-star"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-poll-h"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-photo-video"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-map-marker-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-images"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-heart"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-envelope"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-envelope"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-camera"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-comment"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fab fa-linkedin-in"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fab fa-skype"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-sun"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-subway"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-phone-volume"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-phone-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-mobile-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-headphones"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-microphone"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-search"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-landmark"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-kaaba"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-building"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-landmark"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-wrench"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-user-cog"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-cog"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-cogs"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-sliders-h"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-eye"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-eye-slash"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-dollar-sign"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-sliders-h"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-euro-sign"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-pound-sign"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-rupee-sign"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-pound-sign"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-tv"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-laptop"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-tablet-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-trash-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-trash-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-trash"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-edit"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-user-edit"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-pencil-alt"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-copy"></i>
+						</span>
+						<span class="icon_material">
+							<i class="fas fa-copy"></i>
+						</span>
+						<span class="icon_material">
+							<i class="far fa-times-circle"></i>
+						</span>
+					</div>
+				</div>
+				<!-- library Middle end -->
+				<!-- library bottom start -->
+				<div class="libray_bottom">
+					<a href="#" class="setting_btn green_button">Setting</a>
+					<span class="close_modal green_button">Close</span>
+				</div>
+				<!-- library bottom end -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- icon upload Modal end -->
+
+	<!-- direction_modal start -->
+	<div id="direction_modal" class="tab_direction_modal modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Manage Directions Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+				<div class="external_urls_text">
+					<p>The About us section allows you to control your business information shown in the app.</p>
+				</div>
+				<div class="direction_checkbox check_box">
+					<label>
+						<input type="checkbox" name="direction" value="1">
+						<span class="c_box"></span>
+						<span class="c_text">Don't show About button in app header bar</span>
+					</label>
+                    <label>
+						<input type="checkbox" name="direction" value="2">
+						<span class="c_box"></span>
+						<span class="c_text">Don't show Settings button in the About header bar (appears as a tab instead)</span>
+					</label>
+				</div>			  
+                <!-- Direction tab start -->
+                <div class="direction_tabs">
+                    <!-- tabs start -->
+                    <ul class="dir_tabs">
+                      <li data-tab="tab_1" class="active">Contact Information</li>
+                      <li data-tab="tab_2">social media</li>
+                      <li data-tab="tab_3">business location</li>
+                      <li data-tab="tab_4">banner</li>
+                      <li data-tab="tab_5">opening Times</li>
+                      <li data-tab="tab_6">holiday closing times</li>
+                      <li data-tab="tab_7">legal information</li>
+                      <li data-tab="tab_8">app introduction content</li>
+                    </ul>
+                     <!-- tabs start -->
+                     <div class="content_wrapper">
+                        <!-- tab content start -->
+                        <div class="dir_tab_content active" id="tab_1">
+                           <div class="dashboard_form tab_content_form">
+								<form>
+									<div class="row">
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">App Business Name</label>
+												<div class="input_group">
+													<input type="text" name="app_name" placeholder="App Name">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Business Tagline</label>
+												<div class="input_group">
+													<input type="text" name="business" placeholder="Business Tagline">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Email</label>
+												<div class="input_group">
+													<input type="email" name="email" placeholder="Your Email Id">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Phone</label>
+												<div class="input_group">
+													<input type="text" name="phone" placeholder="Your phone Number">
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-12 col-12">
+											<div class="form_group">
+												<label class="form_label">Business Description</label>
+												<div class="input_group">
+													<div class="content_text_box">
+														<textarea placeholder="Enter You app Description.." name="chat_textarea" class="ckeditor_input_2"></textarea>
+				  									</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_2">
+                              <div class="dashboard_form tab_content_form">
+								<form>
+									<div class="row">
+										<div class="col-md-12 col-12 app_share_dv">
+											<div class="form_group width_50">
+												<label class="form_label">App Share Message</label>
+												<div class="input_group">
+													<input type="text" name="msg" placeholder="">
+												</div>
+											</div>
+											<div class="form_group width_50 field_text">
+												<em>This will be pre-populated when your app is being shared.</em>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Facebook Url</label>
+												<div class="input_group">
+													<input type="url" name="business" placeholder="facebook.com/yourid">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Twitter Url
+												</label>
+												<div class="input_group">
+													<input type="url" name="business" placeholder="twitter.com/yourid">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Instagram Url
+												</label>
+												<div class="input_group">
+													<input type="url" name="business" placeholder="instagram.com/yourid">
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6 col-12">
+											<div class="form_group">
+												<label class="form_label">Youtube Url
+												</label>
+												<div class="input_group">
+													<input type="url" name="business" placeholder="youtube.com/">
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_3">
+							<div class="row">
+								<div class="col-md-6 col-12">
+									<div class="tab_content_map">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810622145!2d-0.24168183442752736!3d51.52877184100475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sin!4v1571481190283!5m2!1sen!2sin" frameborder="0" allowfullscreen=""></iframe>
+									</div>
+								</div>
+								<div class="col-md-6 col-12">
+									<div class="dashboard_form location_form">
+										<form>
+											<div class="form_group">
+												<label class="form_label">Address</label>
+												<div class="input_group">
+													<textarea name="address" placeholder="address"></textarea>
+												</div>
+											</div>
+											<div class="form_group">
+												<label class="form_label">Zipcode</label>
+												<div class="input_group">
+													<input type="text" name="Zipcode" placeholder="">
+												</div>
+											</div>
+											<div class="form_group">
+												<label class="form_label">latitude</label>
+												<div class="input_group">
+													<input type="text" name="latitude" placeholder="">
+												</div>
+											</div>
+											<div class="form_group">
+												<label class="form_label">Longitude</label>
+												<div class="input_group">
+													<input type="text" name="Longitude" placeholder="">
+												</div>
+											</div>
+											<div class="form_group">
+												<label class="form_label"></label>
+												<div class="input_group">
+													<button type="button" class="green_button location_btn">Look up location</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_4">
+                        	<div class="row">
+								<div class="col-md-6 col-12">
+									<div class="content_banner_upload">
+										<p>Upload a Banner Image for the About Us Tab</p>
+										<div class="banner_upload_panel">
+											<div class="app_logo">
+												<img src="images/app_logo.png" alt="" class="img-fluid">
+											</div>
+											<div class="upload_overlay" data-toggle="modal" data-target="#library_modal">
+												<a class="img_upload_icon" href="#">
+													<i class="far fa-edit"></i>
+													<span class="text">1080 x 315</span>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 col-12">
+									<div class="content_banner_img">
+										<img src="images/banner_mockup.png" alt="banner" class="img-fluid">
+									</div>
+								</div>
+							</div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_5">
+                        	<div class="opening_time_editor">
+                                <div class="time_table_center">
+                                    <table>
+                                        <tr>
+                                            <td>Monday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tuesday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Wednesday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thursday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Friday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Saturday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Sunday</td>
+                                            <td>
+                                                <input type="text" name="timepicker" class="time_picker">
+                                            </td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                            <td>-</td>
+                                            <td><input type="text" name="timepicker" class="time_picker"></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                        	</div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_6">
+	                        <div class="holiday_closing_container">
+	                        	<div class="top_text">
+	                        		<p>
+	                        			Orders placed through the app will automatically be declined during the closing times. If you add a closing time with no end date or select 'Close Now' you must manually remove the closing time later!
+	                        		</p>
+	                        	</div>
+                        		<form>
+                        			<!-- append form -->
+		                        	<div class="holiday_time_form">
+			                        	<div class="more_field_group">
+			                        		<div class="h_field_row">
+			                        			<div class="check_box">
+			                        				<label>
+				                        				<input type="checkbox" name="holiday" value="holiday closure">
+				                        				<span class="c_box"></span>
+				                        				<span class="c_text">Enable holiday closure</span>
+				                        				<span class="check_warning">
+				                        					The app will not accept orders during this closure!
+				                        				</span>
+			                        				</label>
+			                        			</div>
+			                        		</div>
+			                        		<div class="h_field_row">
+			                        			<label class="holiday_label">Description</label>
+			                        			<div class="h_input"><input type="text" name=""></div>
+			                        		</div>
+			                        		<div class="h_field_row">
+			                        			<label class="holiday_label">closed from</label>
+			                        			<div class="h_input"><input type="" name="" class="date_timepicker">
+			                        			</div>
+			                        			<div class="h_input_txt">Blank: Start the closure now</div>
+			                        		</div>
+			                        		<div class="h_field_row">
+			                        			<label class="holiday_label">closed to</label>
+			                        			<div class="h_input">
+			                        				<input type="" name="" class="date_timepicker">
+			                        			</div>
+			                        			<div class="h_input_txt">
+			                        				Blank: The closure must be manually disabled
+			                        			</div>
+			                        			<button type="button" class="remove_holiday green_button">&times; Remove</button>
+			                        		</div>
+			                        	</div>
+			                        </div>
+		                        	<!-- append form -->
+		                        	<div class="addmore_field_btn">
+		                        		<button type="button" class="green_button add_holiday_btn"><i class="fas fa-plus"></i>Close now</button>
+		                        		<button type="button" class="green_button add_holiday_btn"><i class="fas fa-plus"></i>add Closing time</button>
+		                        	</div>
+	                        	</form>
+	                        </div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_7">
+                        	<div class="legal_information">
+                                <h5>Business Disclaimer:</h5>
+								<p>
+									This will be displayed on the first launch of the app, leave blank to disable this feature.
+								</p>
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="dashboard_form">
+											<div class="form_group">
+												<div class="input_group">
+													<textarea name="address" placeholder="address"></textarea>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+                        	</div>
+                        </div>
+                        <!-- tab content End -->
+                        <!-- tab content start -->
+                        <div class="dir_tab_content" id="tab_8">
+                        	<div class="app_introduction">
+								<p>
+									The content slides added here will be displayed on the first app launch and if the app is locked.
+								</p>
+								<div class="intro_div_container">
+									<div class="intro_div intro_div_edit ">
+										<div class="splash_screen">
+											<img src="images/splash_screen.jpg" alt="" class="img-fluid splash_img">
+										</div>
+										<div class="add_item_icon" data-toggle="modal" data-target="#intro_content_modal">
+											<i class="far fa-edit"></i>
+										</div>
+										<div class="overlay">
+											<span class="close_btn">
+												<i class="fas fa-times"></i>
+											</span>
+										</div>
+									</div>
+
+									<div class="intro_div" data-toggle="modal" data-target="#intro_content_modal">
+										<div class="add_item_icon">
+											<i class="far fa-plus-square"></i>
+										</div>
+									</div>
+								</div>
+                        	</div>
+                        </div>
+                        <!-- tab content End -->
+                     </div>
+                </div>
+                <!-- Direction tab start -->
+				<!-- modal footer start -->
+				<div class="libray_bottom">
+                    <button type="button" class="green_button">
+					  setting
+					</button>
+					<button type="button" class="green_button button_right">
+					  Save
+					</button>
+				</div>
+			   <!-- modal footer end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- External url Modal end-->
+	<!-- Gallery Modal -->
+	<div id="gallery_modal" class="gallery_modal_p modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	    	<div class="app_modules_head">
+				<h5>Manage Gallery Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+		    <div class="modal-body">
+			  <div class="external_urls_text">
+					<p>
+						Gallery tabs showcase your photos, you can group photos by creating multiple Galleries. Organise the photo order with simple drag and drop. Upload an image to get started!
+					</p>
+				</div>
+				<div class="gallery_editor_row">
+					<div class="option_dv">
+						<label>Display style</label>
+						<select>
+							<option>Tiles</option>
+							<option>Cards</option>
+						</select>
+					</div>
+					<div class="option_dv">
+						<label>user rating</label>
+						<select>
+							<option>on</option>
+							<option>off</option>
+						</select>
+					</div>
+					<div class="ad_img_option">
+						<a href="#" data-toggle="modal" data-target="#library_modal" class="green_button">
+							<i class="fas fa-plus"></i>add images
+						</a>
+					</div>
+				</div>
+				<!-- gallery images wrapper -->
+				<div class="gallery_modal_img">
+					<div class="gal_column">
+						<div class="gal_col">
+							<img src="images/app_logo.png" alt="" align="img-fluid">
+							<div class="gal_col_overlay">
+								<div class="buttons_wrap">
+									<button class="buttons edit_btn" data-toggle="modal" data-target="#edit_gallery"><i class="fas fa-edit"></i></button>
+									<button class="buttons delete_btn"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="gal_column">
+						<div class="gal_col">
+							<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+							<div class="gal_col_overlay">
+								<div class="buttons_wrap">
+									<button class="buttons edit_btn" data-toggle="modal" data-target="#edit_gallery"><i class="fas fa-edit"></i></button>
+									<button class="buttons delete_btn"><i class="fas fa-times"></i></button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- gallery images wrapper -->
+				<!-- library bottom start -->
+				<div class="libray_bottom text-right">
+					<button type="submit" class="green_button">save</button>
+				</div>
+				<!-- library bottom end -->
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Gallery Modal end -->
+	<!-- Edit Gallery Modal -->
+	<div id="edit_gallery" class="gallery_modal_p modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	    	<div class="app_modules_head">
+				<h5>Edit Gallery title and Description</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+		    <div class="modal-body">
+		    	<div class="dashboard_form edit_gallery_form">
+					<form>
+						<div class="form_group">
+							<label class="form_label">title</label>
+							<div class="input_group">
+								<input type="text" name="title" placeholder="Image Title">
+							</div>
+						</div>
+						<div class="form_group">
+							<label class="form_label">Description</label>
+							<div class="input_group">
+								<textarea placeholder="Enter Description of Image"></textarea>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- library bottom start -->
+				<div class="libray_bottom text-right">
+					<button type="submit" class="green_button">save</button>
+					<button type="submit" class="green_button close_modal">close</button>
+				</div>
+				<!-- library bottom end -->
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Edit Gallery Modal end -->
+	<!-- Video Gallery Modal -->
+	<div id="video_gallery_modal" class="video_galery_modal modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	    	<div class="app_modules_head">
+				<h5>Manage Video Directory Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+		    <div class="modal-body">
+			  <div class="external_urls_text">
+					<p>
+						Video directory tab allows you to upload your video content and make it searchable and browsable by category.
+					</p>
+				</div>
+				<div class="gallery_editor_row">
+					<div class="ad_img_option">
+						<a href="#" data-toggle="modal" data-target="#video_edit_modal" class="green_button">
+							<i class="fas fa-plus"></i>add video
+						</a>
+					</div>
+				</div>
+				<!-- video navigation -->
+				<div class="video_navigation">
+					<a href="#" class="nav_btn prev">previous</a>
+					<a href="#" class="nav_btn next">next</a>
+				</div>
+				<!-- video navigation -->
+				<!-- video preview -->
+				<div class="upload_video_prev">
+					<div class="vdo_column">
+						<a href="#" data-toggle="modal" data-target="#video_edit_modal" class="vdo_edit_col">
+							<div class="vdo_img">
+								<span class="vdo_img_icon">
+									<i class="fas fa-video"></i>
+								</span>
+							</div>
+							<div class="video_detail">
+								<h5>video Name</h5>
+								<span class="categories">Category</span>
+								<p><i class="fas fa-edit"></i> click to edit</p>
+							</div>
+						</a>
+					</div>
+					<div class="vdo_column">
+						<a href="#" data-toggle="modal" data-target="#video_edit_modal" class="vdo_edit_col">
+							<div class="vdo_img">
+								<span class="vdo_img_icon">
+									<i class="fas fa-video"></i>
+								</span>
+							</div>
+							<div class="video_detail">
+								<h5>video Name</h5>
+								<span class="categories">Category</span>
+								<p><i class="fas fa-edit"></i> click to edit</p>
+							</div>
+						</a>
+					</div>
+					<div class="vdo_column">
+						<a href="#" data-toggle="modal" data-target="#video_edit_modal" class="vdo_edit_col">
+							<div class="vdo_img">
+								<span class="vdo_img_icon">
+									<i class="fas fa-video"></i>
+								</span>
+							</div>
+							<div class="video_detail">
+								<h5>video Name</h5>
+								<span class="categories">Category</span>
+								<p><i class="fas fa-edit"></i> click to edit</p>
+							</div>
+						</a>
+					</div>
+				</div>
+				<!-- video preview -->
+				<!-- library bottom start -->
+				<div class="libray_bottom text-right">
+					<button type="submit" class="green_button">save</button>
+					<button type="submit" class="green_button close_modal">cancel</button>
+				</div>
+				<!-- library bottom end -->
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Video Gallery Modal end -->
+	<!-- Edit Gallery Modal -->
+	<div id="video_edit_modal" class="video_edit_modal modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	    	<div class="app_modules_head">
+				<h5>Upload/Edit Video</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+		    <div class="modal-body">
+		    	<div class="dashboard_form edit_gallery_form">
+					<form>
+						<div class="form_group">
+							<label class="form_label">Name*	</label>
+							<div class="input_group">
+								<input type="text" name="title" placeholder="Video Title">
+							</div>
+						</div>
+						<div class="form_group">
+							<label class="form_label">Video file*</label>
+							<div class="input_group">
+								<label class="upload_img_btn">
+									<input type="file" name="uploadfile">
+									Upload Video
+								</label>
+								<div class="video_path"></div>
+								<div class="input_info_text">Optimal video format for mobile: .mp4 up to 20 MB</div>
+								<div class="input_info_text">Other formats supported: (mp4, mov, avi, wmv) up to 50 MB</div>
+								<div class="input_info_text">To reduce the file size of videos you might like to try some video converter software.</div>
+							</div>
+						</div>
+						<div class="form_group">
+							<label class="form_label">Category*</label>
+							<div class="input_group">
+								<input type="text" name="title" placeholder="Video Category">
+								<div class="input_info_text">The videos will be listed in the app by category. If your videos aren't split into categories you can create a category called 'All Videos' and assign all videos to this category.</div>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- library bottom start -->
+				<div class="libray_bottom text-right">
+					<button type="submit" class="green_button">save</button>
+					<button type="submit" class="green_button">Delete</button>
+					<button type="submit" class="green_button close_modal">Cancel</button>
+				</div>
+				<!-- library bottom end -->
+		    </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Edit Gallery Modal end -->
+	<!-- library Modal -->
+	<div id="library_modal" class="library_modal modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-body">
+		    <div class="color_box">
+				<div class="box_head">
+					Image library
+				</div>
+				<div class="c_box_body">
+					<div class="c_box_body_inr">
+						<!-- media search start -->
+						<div class="media_search_area">
+							<div class="search_bar">
+								<div class="form_group">
+									<input type="search" name="" placeholder="Search">
+									<button type="submit" class="search_btn">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+							<div class="right_tags">
+								<label class="upload_img_btn">
+									<input type="file" name="uploadfile">
+									Upload Image
+								</label>
+							</div>
+						</div>
+						<!-- media search end -->
+						<!-- library Middle start -->
+						<div class="libray_middle">
+							<div class="filter_tab_content active" id="all_screen">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/app_logo.png" alt="" align="img-fluid">
+									</div>
+								</div>
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+									</div>
+								</div>
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/app_logo.png" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="filter_tab_content" id="app_icon">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/app_logo.png" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="filter_tab_content" id="splash_screen">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="filter_tab_content" id="add_banner">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- library Middle end -->
+						<!-- library bottom start -->
+						<div class="libray_bottom">
+							<a href="#" class="setting_btn green_button">Setting</a>
+							<span class="close_modal green_button button_right">Close</span>
+						</div>
+						<!-- library bottom end -->
+					</div>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- library Modal end -->
+	<!-- intro content Modal start -->
+	<div id="intro_content_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Edit Content Slide</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+      			<div class="row">
+      				<div class="col-lg-4">
+		      			 <div class="intro_text_box">
+							<textarea placeholder="Your Message Here..." name="chat_textarea" class="ckeditor_input_3"></textarea>
+					  	</div>
+				  	</div>
+				  	<div class="col-lg-8">
+					  	<div class="intro_tab_text">
+					  		<p>
+								Here you can edit the background and content of the slide.If you want to write your own HTML for this page then choose the 'HTML' button from the editor toolbar.
+							</p>
+							<div class="intro_tab_bg">
+								<p>Background</p>
+						  		<div class="inputs">
+									<div class="color_picker preview_bg">
+									  <span class="color_preview">&nbsp;</span>
+									</div>
+									<span class="green_button">select color</span>
+									<button class="green_button" data-toggle="modal" data-target="#library_modal">
+										Select Image
+									</button>
+									<button type="button" class="green_button clear_btn">Clear</button>
+								</div>
+								<span>The background of the content slide </span>
+							</div>
+					  	</div>
+				  	</div>
+			  	</div>		  
+				<!-- modal close start -->
+				<div class="libray_bottom text-right">
+					<button type="button" class="green_button">
+					  Save
+					</button>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- intro content Modal end-->
+	<!-- intro content Modal start -->
+	<div id="app_structure_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog modal_dialog_big">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Manage Tier Tab</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+      			<div class="row">
+      				<div class="col-lg-4">
+		      			 <div class="structure_text_box">
+		      			 	<p>Content Editor</p>
+							<textarea placeholder="Your Message Here..." name="chat_textarea" class="ckeditor_input_4"></textarea>
+					  	</div>
+				  	</div>
+				  	<div class="col-lg-4">
+					  	<div class="structure_thumbs">
+					  		<img src="images/icons/structure_1.png" class="img-fluid">
+					  		<p>
+								Create a header for your Tier using the Content Editor.
+							</p>
+					  	</div>
+				  	</div>
+				  	<div class="col-lg-4">
+					  	<div class="structure_thumbs">
+							<img src="images/icons/structure_2.gif" class="img-fluid">
+					  		<p>
+								Drag and drop Tiers to organise content and create structure.
+							</p>
+					  	</div>
+				  	</div>
+			  	</div>		  
+				<!-- modal close start -->
+				<div class="libray_bottom">
+					<button type="button" class="green_button">
+					  setting
+					</button>
+					<button type="button" class="green_button button_right">
+					  Save
+					</button>
+				</div>
+			   <!-- modal close end -->
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- intro content Modal end-->
+	<!-- Dashboard warppper Start -->
+	<!-- jquery library js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery library js -->
+	<!-- bootstrap js file-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- bootstrap js file-->
+	<!-- owl-carousel js file-->
+	<script src="js/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel js file-->
+    <!-- gallery js file-->
+	<script src="js/plugins/gallery/jquery.magnific-popup.js"></script>
+    <!-- gallery js file-->
+    <!-- jquery ui js file-->
+	<script src="js/plugins/jquery_ui/jquery-ui.min.js"></script>
+	<script src="js/plugins/jquery_ui/jquery-ui-timepicker-addon.js"></script>
+    <!-- jquery ui js file-->
+	<!-- bootstrap selectpicker -->
+    <script src="js/plugins/selectpicker/bootstrap-select.js"></script>
+    <!-- bootstrap selectpicker -->
+    <!-- color picker -->
+    <script src="js/plugins/colorpicker/js/colorpicker.js"></script>
+    <script src="js/plugins/colorpicker/js/eye.js"></script>
+    <script src="js/plugins/colorpicker/js/layout.js"></script>
+    <!-- color picker -->
+    <!-- ckeditor -->
+     <script src="js/ckeditor.js"></script>
+    <!-- ckeditor -->
+	<script src="js/custom_script.js"></script>
+ 	<script>
+ 		//CkEditor js scrirpt
+         ClassicEditor
+            .create( document.querySelector( '.ckeditor_input' ) )
+            .catch( error => {
+                console.error( error );
+            });  
+            ClassicEditor
+            .create( document.querySelector( '.ckeditor_input_2' ) )
+            .catch( error => {
+                console.error( error );
+            });                                
+            ClassicEditor
+            .create( document.querySelector( '.ckeditor_input_3' ) )
+            .catch( error => {
+                console.error( error );
+            });  
+            ClassicEditor
+            .create( document.querySelector( '.ckeditor_input_4' ) )
+            .catch( error => {
+                console.error( error );
+            });   
+      </script>
+	</body>
+</html>
+
+

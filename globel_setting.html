@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Apps Builder</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Apps Builder">
+	<meta name="Keyword" content="Apps Builder">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/icon" href="images/favicon.png">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<!-- Dashboard warppper Start -->
+	<div class="ap_dashboard_wrapper">
+		<!-- left menus stasrt -->
+		<div class="left_menus_part">
+			<div class="main_menu">
+				<div class="app_logo_cont">
+					<span class="app_logo">
+						<img src="images/app_logo.png" alt="" align="img-fluid">
+					</span>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">
+							<span class="m_icon"><i class="fas fa-tachometer-alt"></i></span>
+							<span class="m_label">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="app_build.html" class="active">
+							<span class="m_icon"><i class="fas fa-tools"></i></span>
+							<span class="m_label">Build</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-bullseye"></i></span>
+							<span class="m_label">Marketing</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-envelope-open-text"></i></span>
+							<span class="m_label">Messaging</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-chart-line"></i></span>
+							<span class="m_label">Analytics</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-user-friends"></i></span>
+							<span class="m_label">Customers</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- submenu div -->
+			<div class="sub_menus">
+				<div class="progress_bar">
+					<div class="prog_bar">
+						
+					</div>
+					<div class="prog_text">
+						<h5>1 of 3</h5>
+						<span>Sections complete</span>
+					</div>
+				</div>
+				<h5 class="menu_head heaer_border">App Appearance</h5>
+				<ul class="menus">
+					<li>
+						<a href="app_build.html"><span class="m_icons">
+							<i class="far fa-edit"></i></span>
+							<span class="m_label">Themes</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="build_image.html"><span class="m_icons">
+							<i class="far fa-image"></i></span>
+							<span class="m_label">Image</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+				<h5 class="menu_head heaer_border">Content & Layout</h5>
+				<ul class="menus">
+					<li>
+						<a href="app_content.html"><span class="m_icons">
+							<i class="far fa-file-alt"></i></span>
+							<span class="m_label">content</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="navigation.html">
+							<span class="m_icons">
+							<i class="fas fa-bars"></i></span>
+							<span class="m_label">Navigation</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+				<h5 class="menu_head heaer_border">App Appearance</h5>
+				<ul class="menus">
+					<li>
+						<a href="submit_app.html">
+							<span class="m_icons">
+							<i class="fas fa-paper-plane"></i></span>
+							<span class="m_label">submit App</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="globel_setting.html" class="active">
+							<span class="m_icons">
+							<i class="fas fa-cogs"></i></span>
+							<span class="m_label">Globle Settings</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- submenu div -->
+		</div>
+		<!-- left menus end -->
+		<!-- dashboard content Start -->
+		<div class="dashboard_content">
+			<div class="dashboard_content_inr">
+				<div class="globel_setting_page">
+					<!-- accordion group start -->
+      				<div class="accordio_group">
+      					<div class="acordion_heading active">
+      						<h5>Action Alerts</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel content_open">
+	      					<div class="globel_accordion_text">
+			      				<p>
+	      							Enter your details to enable notifications when app users complete actions, such as completed forms, or food orders in the app.
+	      						</p>
+	      						<!-- form Start -->
+	      						<div class="dashboard_form globel_setting_frm">
+	      							<div class="row">
+	      								<div class="col-lg-4 col-xl-5">
+	      									<div class="form_group">
+												<label class="form_label">Email</label>
+												<div class="input_group">
+													<input type="email" name="app_name" placeholder="Enter Email">
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-lg-3 col-xl-2">
+	      									<div class="form_group">
+												<label class="form_label">Google Cloud Printer</label>
+												<div class="input_group">
+													<a href="#" class="googel_cloud_lnk">
+														<img src="images/icons/cloud_icon.png">
+													</a>
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-lg-5 col-xl-5">
+	      									<div class="form_group">
+												<label class="form_label">Google Cloud Printer</label>
+												<div class="input_group">
+													<input type="text" name="googel_cloud" placeholder="">
+												</div>
+											</div>
+	      								</div>
+	      							</div>
+									<div class="gogle_button_group text-right">
+										<button type="button" class="green_button print_list">Get printer list</button>
+										<button type="button" class="green_button discon_btn">Disconnect</button>
+									</div>
+	      						</div>
+	      						<!-- form end -->
+		      				</div>
+	      				</div>
+      				</div>
+      				<!-- accordion group end -->
+      				<!-- accordion group start -->
+      				<!--<div class="accordio_group">
+      					<div class="acordion_heading">
+      						<h5>Currency Format</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel">
+	      					<div class="globel_accordion_text">
+			      				<p>
+	      							In this area you can define the currency that your app will use.
+	      						</p>-->
+	      						<!-- form Start -->
+	      						<!--<div class="dashboard_form globel_setting_frm">
+	      							<div class="row">
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Currency Symbol</label>
+												<div class="input_group">
+													<select>
+														<option value="Pound"> Pound Sterling</option>
+														<option value="Dollar">U.S. Dollar</option>
+														<option value="swiss">swiss franc</option>
+														<option value="Japanese">Japanese Yen</option>
+													</select>
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Decimal Places</label>
+												<div class="input_group">
+													<input type="text" name="Decimal" placeholder="">
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Decimal Separator</label>
+												<div class="input_group">
+													<input type="text" name="Decimal_sap" placeholder=".">
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Thousands Separator</label>
+												<div class="input_group">
+													<input type="text" name="thousand_sap" placeholder=",">
+												</div>
+											</div>
+	      								</div>
+	      							</div>
+	      						</div>-->
+	      						<!-- form end -->
+		      				<!--</div>
+	      				</div>
+      				</div>-->
+      				<!-- accordion group end -->
+      				<!-- accordion group start -->
+      				<div class="accordio_group">
+      					<div class="acordion_heading">
+      						<h5>Location Settings</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel">
+	      					<div class="globel_accordion_text">
+	      						<!-- form Start -->
+	      						<div class="dashboard_form globel_setting_frm">
+	      							<!-- row start -->
+	      							<div class="frm_location_row">
+	      							  <h5 class="lctn_heading">Country</h5>
+				      				  <p>
+										Some words and phrases in the app may be modified based on the country you set here.
+		      						  </p>
+		      							<div class="row">
+		      								<div class="col-md-4">
+		      									<div class="form_group">
+													<label class="form_label">Currency Symbol
+													</label>
+													<div class="input_group">
+														<select>
+															<option value="Pound">India</option>
+															<option value="Dollar">America</option>
+															<option value="swiss">China</option>
+															<option value="Japanese">Pakistan</option>
+														</select>
+													</div>
+												</div>
+		      								</div>
+		      							</div>
+	      							</div>
+	      							<!-- row end -->
+	      							<!-- row start -->
+	      							<div class="frm_location_row">
+	      							  <h5 class="lctn_heading">Timezone</h5>
+				      				  <p>
+										Different geographical locations observe different timezones. Some functions, such as scheduled push notifications, rely on the timezone being set properly. Choose the timezone region that best suits your app.
+		      						  </p>
+		      							<div class="row">
+		      								<div class="col-md-4">
+		      									<div class="form_group">
+													<label class="form_label">Region</label>
+													<div class="input_group">
+														<select>
+															<option value="Pound">africa</option>
+															<option value="Dollar">America</option>
+															<option value="Dollar">America-Argentina</option>
+															<option value="Dollar">America-indiana</option>
+															<option value="Dollar">America-kentucky</option>
+															<option value="Dollar">America-North Dakota</option>
+															<option value="swiss">Antarktica</option>
+															<option value="swiss">Asia</option>
+															<option value="swiss">Europe</option>
+														</select>
+													</div>
+												</div>
+		      								</div>
+		      								<div class="col-md-4">
+		      									<div class="form_group">
+													<label class="form_label">Nearest City:</label>
+													<div class="input_group">
+														<select>
+															<option value="Pound">London</option>
+															<option value="Dollar">Madrid</option>
+															<option value="Dollar">Malata</option>
+														</select>
+													</div>
+												</div>
+		      								</div>
+		      								<div class="col-md-4">
+		      									<div class="form_group">
+													<label class="form_label">Nearest City:</label>
+													<div class="input_group">
+														<select>
+															<option value="Dollar">Default</option>
+															<option value="Dollar">12 Hour</option>
+															<option value="Pound">24 Hour</option>
+														</select>
+													</div>
+												</div>
+		      								</div>
+		      							</div>
+	      							</div>
+	      							<!-- row end -->
+	      							<!-- row start -->
+	      							<div class="frm_location_row">
+	      							  <h5 class="lctn_heading">Units</h5>
+				      				  <p>
+										Choose the units you want to use for displaying distances within the app (Used by the geo-listings module).
+		      						  </p>
+		      							<div class="row">
+		      								<div class="col-md-4">
+		      									<div class="form_group">
+													<label class="form_label">Distance</label>
+													<div class="input_group">
+														<select>
+															<option value="imperial">imperial(miles)</option>
+															<option value="Metric">Metric(Km)</option>
+														</select>
+													</div>
+												</div>
+		      								</div>
+		      							</div>
+	      							</div>
+	      							<!-- row end -->
+	      						</div>
+	      						<!-- form end -->
+		      				</div>
+	      				</div>
+      				</div>
+      				<!-- accordion group end -->
+      				<!-- accordion group start -->
+      				<div class="accordio_group">
+      					<div class="acordion_heading">
+      						<h5>InApp Ads</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel">
+	      					<div class="globel_accordion_text">
+			      				<p>
+	      							Monetise your app with Ads from AdMob. <a href="#">Sign up to AdMob</a> and add your Unit ID below.
+									This feature is currently only supported on iOS devices with tab bar navigation.
+	      						</p>
+	      						<!-- form Start -->
+	      						<div class="dashboard_form globel_setting_frm">
+	      							<div class="row">
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">AdMob Unit ID</label>
+												<div class="input_group">
+													<input type="text" name="admob" placeholder="Enter AdMob Unit ID">
+												</div>
+											</div>
+	      								</div>
+	      							</div>
+	      						</div>
+	      						<!-- form end -->
+		      				</div>
+	      				</div>
+      				</div>
+      				<!-- accordion group end -->
+      				<!-- accordion group start -->
+      				<!--<div class="accordio_group">
+      					<div class="acordion_heading">
+      						<h5>Twitter API</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel">
+	      					<div class="globel_accordion_text">
+			      				<p>
+	      							In this area you can fill in your Twitter details to link your app to your twitter feed.
+	      						</p>
+	      						<div class="dashboard_form globel_setting_frm">
+	      							<div class="row">
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Twitter Key</label>
+												<div class="input_group">
+													<input type="text" name="twitter_key" placeholder="Enter Twitter Key">
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Twitter Secret</label>
+												<div class="input_group">
+													<input type="text" name="twitter_key" placeholder="">
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Twitter Access</label>
+												<div class="input_group">
+													<input type="text" name="twitter_key" placeholder="">
+												</div>
+											</div>
+	      								</div>
+	      								<div class="col-md-6">
+	      									<div class="form_group">
+												<label class="form_label">Twitter Access Secret</label>
+												<div class="input_group">
+													<input type="text" name="twitter_key" placeholder="">
+												</div>
+											</div>
+	      								</div>
+	      							</div>
+	      						</div>
+		      				</div>
+	      				</div>
+      				</div>-->
+      				<!-- accordion group end -->
+      				<!-- accordion group start -->
+      				<div class="accordio_group">
+      					<div class="acordion_heading">
+      						<h5>Google analytics</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel">
+	      					<div class="globel_accordion_text">
+			      				<p>
+	      							In this area you can enter your google analytics key to monitor your app's performance.
+	      						</p>
+	      						<!-- form Start -->
+	      						<div class="dashboard_form globel_setting_frm">
+	      							<div class="row">
+	      								<div class="col-md-12">
+	      									<div class="form_group">
+												<label class="form_label">Google analytics key</label>
+												<div class="input_group">
+													<input type="text" name="google_key" placeholder="Enter Google Analytics Key">
+												</div>
+											</div>
+	      								</div>
+	      							</div>
+	      						</div>
+	      						<!-- form end -->
+		      				</div>
+	      				</div>
+      				</div>
+      				<!-- accordion group end -->
+      				<!-- accordion group start -->
+      				<!--<div class="accordio_group">
+      					<div class="acordion_heading">
+      						<h5>Social Media Accounts</h5>
+      						<span class="close_btn"><i class="fas fa-plus"></i></span>
+      					</div>
+      					<div class="accordio_panel">
+	      					<div class="globel_accordion_text">
+	      						<div class="social_net_container">
+	      							<a href="#" class="socail_btns facebook">
+	      								<span class="s_icon">
+	      									<i class="fab fa-facebook-f"></i>
+	      								</span>
+	      								<span class="s_text">connect with facebook</span>
+	      							</a>
+	      							<a href="#" class="socail_btns twitter">
+	      								<span class="s_icon">
+	      									<i class="fab fa-twitter"></i>
+	      								</span>
+	      								<span class="s_text">connect with Twitter</span>
+	      							</a>
+	      						</div>
+		      				</div>
+	      				</div>
+      				</div>-->
+      				<!-- accordion group end -->
+      				<div class="button_group">
+      					<input type="submit" name="submit" value="Save Setting" class="green_button">
+      				</div>
+				</div>
+			</div>
+		</div>
+		<!-- dashboard content end -->
+	</div>
+	<!-- Dashboard warppper Start -->
+	<!-- jquery library js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery library js -->
+	<!-- bootstrap js file-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- bootstrap js file-->
+	<!-- owl-carousel js file-->
+	<script src="js/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel js file-->
+    <!-- gallery js file-->
+	<script src="js/plugins/gallery/jquery.magnific-popup.js"></script>
+    <!-- gallery js file-->
+    <!-- jquery ui js file-->
+	<script src="js/plugins/jquery_ui/jquery-ui.min.js"></script>
+    <!-- jquery ui js file-->
+	<!-- bootstrap selectpicker -->
+    <script src="js/plugins/selectpicker/bootstrap-select.js"></script>
+    <!-- bootstrap selectpicker -->
+    <!-- color picker -->
+    <script src="js/plugins/color-picker/jquery.colorpicker.bygiro.min.js"></script>
+    <!-- color picker -->
+	<script src="js/custom_script.js"></script>
+	</body>
+</html>
+
+

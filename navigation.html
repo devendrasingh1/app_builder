@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Apps Builder</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Apps Builder">
+	<meta name="Keyword" content="Apps Builder">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/icon" href="images/favicon.png">
+	<link href="css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+  </head>
+  <body>
+	<!-- Dashboard warppper Start -->
+	<div class="ap_dashboard_wrapper">
+		<!-- left menus stasrt -->
+		<div class="left_menus_part">
+			<div class="main_menu">
+				<div class="app_logo_cont">
+					<span class="app_logo">
+						<img src="images/app_logo.png" alt="" align="img-fluid">
+					</span>
+				</div>
+				<ul>
+					<li>
+						<a href="index.html">
+							<span class="m_icon"><i class="fas fa-tachometer-alt"></i></span>
+							<span class="m_label">Dashboard</span>
+						</a>
+					</li>
+					<li>
+						<a href="app_build.html" class="active">
+							<span class="m_icon"><i class="fas fa-tools"></i></span>
+							<span class="m_label">Build</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-bullseye"></i></span>
+							<span class="m_label">Marketing</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-envelope-open-text"></i></span>
+							<span class="m_label">Messaging</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-chart-line"></i></span>
+							<span class="m_label">Analytics</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span class="m_icon"><i class="fas fa-user-friends"></i></span>
+							<span class="m_label">Customers</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- submenu div -->
+			<div class="sub_menus">
+				<div class="progress_bar">
+					<div class="prog_bar">
+						
+					</div>
+					<div class="prog_text">
+						<h5>1 of 3</h5>
+						<span>Sections complete</span>
+					</div>
+				</div>
+				<h5 class="menu_head heaer_border">App Appearance</h5>
+				<ul class="menus">
+					<li>
+						<a href="app_build.html"><span class="m_icons">
+							<i class="far fa-edit"></i></span>
+							<span class="m_label">Themes</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="build_image.html"><span class="m_icons">
+							<i class="far fa-image"></i></span>
+							<span class="m_label">Image</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+				<h5 class="menu_head heaer_border">Content & Layout</h5>
+				<ul class="menus">
+					<li>
+						<a href="app_content.html"><span class="m_icons">
+							<i class="far fa-file-alt"></i></span>
+							<span class="m_label">content</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="navigation.html" class="active">
+							<span class="m_icons">
+							<i class="fas fa-bars"></i></span>
+							<span class="m_label">Navigation</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+				<h5 class="menu_head heaer_border">App Appearance</h5>
+				<ul class="menus">
+					<li>
+						<a href="submit_app.html">
+							<span class="m_icons">
+							<i class="fas fa-paper-plane"></i></span>
+							<span class="m_label">submit App</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+					<li>
+						<a href="globel_setting.html">
+							<span class="m_icons">
+							<i class="fas fa-cogs"></i></span>
+							<span class="m_label">Globle Settings</span>
+							<span class="c_icon"><i class="far fa-circle"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!-- submenu div -->
+		</div>
+		<!-- left menus end -->
+		<!-- dashboard content Start -->
+		<div class="dashboard_content">
+			<div class="dashboard_content_inr">
+				<!-- Tabs start -->
+				<div class="build_tabs">
+					<ul class="tab_menu">
+						<li data-tab="editor" class="active tab_link">Editor</li>
+						<li data-tab="preview" class="tab_link">Preview</li>
+					</ul>
+				</div>
+				<!-- Tabs end -->
+				<div class="white_box image_build_page">
+					<!-- Editor tab content start -->
+					<div class="tab_content active" id="editor">
+						<div class="navigation_page_wrap">
+							<!-- navigation setting -->
+							<div class="nav_setting_box">
+								<h5 class="heading">Navigation Settings</h5>
+								<!-- setting type start -->
+								<div class="setting_type_wrap">
+									<div class="nav_setting_col">
+										<label class="setting_navs">
+											<h5>tab bar</h5>
+											<div class="thumb">
+												<img src="images/nav/tab_bar.png" alt="" class="img-fluid">
+											</div>
+											<div class="nav_radio">
+												<input type="radio" name="navtype" value="tabbar" checked="">
+												<span class="r_check">
+													<span class="arrow"></span>
+												</span>
+											</div>
+										</label>
+									</div>
+									<div class="nav_setting_col">
+										<label class="setting_navs">
+											<h5>side menu</h5>
+											<div class="thumb">
+												<img src="images/nav/sidebar_menu.png" alt="" class="img-fluid">
+											</div>
+											<div class="nav_radio">
+												<input type="radio" name="navtype" value="sidemenu">
+												<span class="r_check">
+													<span class="arrow"></span>
+												</span>
+											</div>
+										</label>
+									</div>
+								</div>
+								<!-- setting type end -->
+								<!-- setting form container start-->
+								<div class="setting_form_wrap">
+									<!-- Setting form start -->
+									<div class="nav_setting_form active" id="tabbar">
+										<div class="nav_form_group">
+											<label>Transparency</label>
+											<div class="input_wrap">
+												<select>
+													<option value="">off</option>
+													<option value="10">10%</option>
+													<option value="20">20%</option>
+													<option value="30">30%</option>
+													<option value="40">40%</option>
+													<option value="50">50%</option>
+													<option value="60">60%</option>
+													<option value="70">70%</option>
+													<option value="80">80%</option>
+													<option value="90">90%</option>
+													<option value="100">100%</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_form_group">
+											<label>Tab Titles</label>
+											<div class="input_wrap">
+												<select>
+													<option value="">hide</option>
+													<option value="10">show</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_btn_group">
+											<button type="button" class="green_button save_btn">Save</button>
+											<button type="button" class="green_button cancel_btn">cancel</button>
+										</div>
+									</div>
+									<!-- Setting form End -->
+									<!-- Setting form start -->
+									<div class="nav_setting_form" id="sidemenu">
+										<div class="nav_form_group">
+											<label>Transparency</label>
+											<div class="input_wrap">
+												<select>
+													<option value="">off</option>
+													<option value="10">10%</option>
+													<option value="20">20%</option>
+													<option value="30">30%</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_form_group">
+											<label>Tab Titles</label>
+											<div class="input_wrap">
+												<select>
+													<option value="">hide</option>
+													<option value="10">show</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_form_group">
+											<label>Side Menu Width</label>
+											<div class="input_wrap">
+												<select>
+													<option value="15">15%</option>
+													<option value="30">30%</option>
+													<option value="45">45%</option>
+													<option value="60">60%</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_form_group">
+											<label>Odd Even Styling</label>
+											<div class="input_wrap">
+												<select>
+													<option value="on">on</option>
+													<option value="off">off</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_form_group">
+											<label>Separator Lines</label>
+											<div class="input_wrap">
+												<select>
+													<option value="">hide</option>
+													<option value="10">show</option>
+												</select>
+											</div>
+										</div>
+										<div class="nav_form_group">
+											<label>line color</label>
+											<div class="input_wrap">
+												<div class="color_picker nav_line_color">
+												  <span class="color_preview">&nbsp;</span>
+												</div>
+											</div>
+										</div>
+										<div class="nav_btn_group">
+											<button type="button" class="green_button save_btn">Save</button>
+											<button type="button" class="green_button cancel_btn">cancel</button>
+										</div>
+									</div>
+									<!-- Setting form End -->
+								</div>
+								<!-- setting form container end-->
+							</div>
+							<!-- navigation setting -->
+							<!-- navigation type left-->
+							<div class="nav_type_left">
+								<!-- navigation setting -->	
+								<div class="nav_tab_heading">
+									<h5>Navigation Style</h5>
+									<p>Choose the navigation style you would like your app to use below.</p>
+									<div class="nav_customized_text">You are currently using customised style, selecting a preset will clear your custom navigation settings.</div>
+								</div>
+								<!-- navigation container -->
+								<div class="nav_type_container">
+									<!-- navigation types -->
+									<div class="navigation_column">
+										<div class="navigation_type">
+											<div class="thumbs">
+												<img src="images/nav/nav_1.png" alt="nav Thumb" class="img-fluid">
+											</div>
+											<div class="nav_thumb_title">Side menu</div>
+										</div>
+									</div>
+									<!-- navigation types -->
+									<!-- navigation types -->
+									<div class="navigation_column">
+										<div class="navigation_type">
+											<div class="thumbs">
+												<img src="images/nav/nav_2.png" alt="nav Thumb" class="img-fluid">
+											</div>
+											<div class="nav_thumb_title">Side menu without lines</div>
+										</div>
+									</div>
+									<!-- navigation types -->
+									<!-- navigation types -->
+									<div class="navigation_column">
+										<div class="navigation_type">
+											<div class="thumbs">
+												<img src="images/nav/nav_3.png" alt="nav Thumb" class="img-fluid">
+											</div>
+											<div class="nav_thumb_title">Transparent side menu</div>
+										</div>
+									</div>
+									<!-- navigation types -->
+									<!-- navigation types -->
+									<div class="navigation_column">
+										<div class="navigation_type">
+											<div class="thumbs">
+												<img src="images/nav/nav_4.png" alt="nav Thumb" class="img-fluid">
+											</div>
+											<div class="nav_thumb_title">Transparent side menu without lines</div>
+										</div>
+									</div>
+									<!-- navigation types -->
+									<!-- navigation types -->
+									<div class="navigation_column nav_custom">
+										<div class="navigation_type">
+											<div class="thumbs">
+												<img src="images/nav/nav_5.png" alt="nav Thumb" class="img-fluid">
+											</div>
+											<div class="nav_thumb_title">custom</div>
+										</div>
+									</div>
+									<!-- navigation types -->
+								</div>
+								<!-- navigation container -->
+							</div>
+							<!-- navigation type left end-->
+						</div>
+					</div>
+					<!-- Editor content end -->
+					<!-- preview content start -->
+					<div class="tab_content" id="preview">
+						<!-- right part -->
+						<div class="preview_build_ap">
+							<div class="build_mockup">
+								<div class="app_build_img">
+									<div class="app_screen">
+										<div class="app_screen_inr">
+											<div class="app_header">
+												<div class="logos">
+													<img src="images/app_logo.png" alt="logo">
+												</div>
+											</div>
+											<div class="app_panel">
+												
+											</div>
+											<div class="app_tabbar">
+												<ul class="tabbar_menu">
+													<li class="active">
+														<div><i class="fas fa-home"></i>
+															<span class="txts">Home</span>
+														</div>
+													</li>
+													<li>
+														<div><i class="fas fa-calendar-alt"></i>
+															<span class="txts">Book</span>
+														</div>
+													</li>
+													<li>
+														<div><i class="far fa-heart"></i>
+															<span class="txts">Loyalty</span>
+														</div>
+													</li>
+													<li>
+														<div><i class="fas fa-map-marker-alt"></i>
+															<span class="txts">About us</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- right part -->
+					</div>
+					<!-- preview content end -->
+				</div>
+			</div>
+		</div>
+		<!-- dashboard content end -->
+	</div>
+	<!-- Dashboard warppper Start -->
+	<!-- library Modal -->
+	<div id="library_modal" class="library_modal modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-body">
+		    <div class="color_box">
+				<div class="box_head">
+					Image library: Select your App Icon
+				</div>
+				<div class="c_box_body">
+					<div class="c_box_body_inr">
+						<!-- media search start -->
+						<div class="media_search_area">
+							<div class="search_bar">
+								<div class="form_group">
+									<input type="search" name="" placeholder="Search">
+									<button type="submit" class="search_btn">
+										<i class="fas fa-search"></i>
+									</button>
+								</div>
+							</div>
+							<div class="right_tags">
+								<span class="tag_text">Filter by Tags</span>
+								<ul class="filter_tag">
+									<li data-tab="all_screen" class="active">All</li>
+									<li data-tab="app_icon">App Icon</li>
+									<li data-tab="splash_screen">Add Banner</li>
+									<li data-tab="add_banner">splash screen</li>
+								</ul>
+								<label class="upload_img_btn">
+									<input type="file" name="uploadfile">
+									Upload Image
+								</label>
+							</div>
+						</div>
+						<!-- media search end -->
+						<!-- library Middle start -->
+						<div class="libray_middle">
+							<div class="filter_tab_content active" id="all_screen">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/app_logo.png" alt="" align="img-fluid">
+									</div>
+								</div>
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+									</div>
+								</div>
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/app_logo.png" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="filter_tab_content" id="app_icon">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/app_logo.png" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="filter_tab_content" id="splash_screen">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+							<div class="filter_tab_content" id="add_banner">
+								<div class="library_column">
+									<div class="library_colm">
+										<img src="images/splash_screen.jpg" alt="" align="img-fluid">
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- library Middle end -->
+						<!-- library bottom start -->
+						<div class="libray_bottom">
+							<a href="#" class="setting_btn green_button">Setting</a>
+							<span class="close_modal green_button">Close</span>
+						</div>
+						<!-- library bottom end -->
+					</div>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- library Modal end -->
+	<!-- Dashboard warppper Start -->
+	<!-- jquery library js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery library js -->
+	<!-- bootstrap js file-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- bootstrap js file-->
+	<!-- owl-carousel js file-->
+	<script src="js/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel js file-->
+    <!-- gallery js file-->
+	<script src="js/plugins/gallery/jquery.magnific-popup.js"></script>
+    <!-- gallery js file-->
+    <!-- jquery ui js file-->
+	<script src="js/plugins/jquery_ui/jquery-ui.min.js"></script>
+    <!-- jquery ui js file-->
+	<!-- bootstrap selectpicker -->
+    <script src="js/plugins/selectpicker/bootstrap-select.js"></script>
+    <!-- bootstrap selectpicker -->
+    <!-- color picker -->
+    <script src="js/plugins/colorpicker/js/colorpicker.js"></script>
+    <script src="js/plugins/colorpicker/js/eye.js"></script>
+    <script src="js/plugins/colorpicker/js/layout.js"></script>
+    <!-- color picker -->
+	<script src="js/custom_script.js"></script>
+	</body>
+</html>
+
+
