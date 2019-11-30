@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Apps Builder HTML</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Apps Builder">
+	<meta name="Keyword" content="Apps Builder">
+	<meta name="author" content="">
+	<link rel="shortcut icon" type="image/icon" href="images/favicon.png">   
+	<link href="css/main.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<style type="text/css">
+		.library_image_upload input {
+			position: absolute;
+			opacity: 0;
+		}
+		.library_image_upload {
+			display: inline-block;
+			padding: 10px;
+			background: black;
+			color: #fff;
+			text-transform: capitalize;
+		}
+		/*select dropdown css*/
+		.select_dropdown_wrap {
+		    display: inline-block;
+		    width: 100%;
+		    text-align: left;
+		}
+		.select_drop_h {
+		    position: relative;
+		    display: inline-block;
+		    width: 100%;
+		    border: 1px solid #eff0fb;
+		    border-radius: 0;
+		    background-color: #eff0fb;
+		    font-size: 16px;
+		    padding: 0 10px;
+		    height: 38px;
+		    line-height: 38px;
+		}
+		.select_drop_h .drop_icon { 
+		    position: absolute;
+		    right: 9px;
+		    top: 10px;
+		    font-size: 20px;
+		    color: #000;
+		    line-height: 15px;
+		}
+		.select_drop_h .drop_icon i {
+		    line-height: 15px;
+		}
+		.select_dropdown {
+		    float: left;
+		    width: 100%;
+		    background: #fff;
+		    box-shadow: 5px 8px 15px -2px rgba(0, 0, 0, 0.37);
+		    padding: 0px;
+		    margin: 0;
+		    display: none;
+		    position: relative;
+		    z-index: 0;
+		    border-radius: 4px;
+		}
+		.select_dropdown::before {
+		    content: "";
+		    position: absolute;
+		    top: -10px;
+		    right: 10px;
+		    border-right: 7px solid transparent;
+		    border-left: 7px solid transparent;
+		    border-bottom: 10px solid #fff;
+		}
+		.select_dropdown_list{
+		    float: left;
+		    width: 100%;
+		    padding: 0;
+		    margin: 0;
+		    list-style: none;
+		    overflow-y: auto;
+		    max-height: 160px;
+		}
+		.select_dropdown_list > li {
+		    float: left;
+		    width: 100%;
+		    line-height: normal;
+		    padding: 10px 10px;
+		    border-bottom: 1px solid #e6e4e4;
+		}
+		/*select dropdown css*/
+		/*== check box css ==*/
+		.check_box input[type="checkbox"]{
+		    display: none;
+		}
+		.check_box label {
+		    display: inline-block;
+		    position:relative;
+		    cursor:pointer;
+		    margin: 0;
+		}
+		.check_box .ch_box {
+		    display: inline-block;
+		    width: 15px;
+		    height: 15px;
+		    border: 1px solid #999;
+		    position: relative;
+		    transition: all ease-in 0.25s;
+		    -webkit-transition: all ease-in 0.25s;
+		    -moz-transition: all ease-in 0.25s;
+		    vertical-align: middle;
+		    float: left;
+		    margin: 0;
+		    position: absolute;
+		    left: 0;
+		    top: 1px;
+		}
+		.check_box .ch_box:after {
+		    position: absolute;
+		    content: "";
+		    left: 2px;
+		    top: 3px;
+		    width: 10px;
+		    height: 5px;
+		    border-left: 2px solid #16a9ff;
+		    border-bottom: 2px solid #16a9ff;
+		    visibility:hidden;
+		    opacity:0;
+		    transition:all ease-in 0.25s;
+		    -webkit-transition:all ease-in 0.25s;
+		    -moz-transition:all ease-in 0.25s;
+		}
+		.check_box .ch_text {
+		    display: block;
+		    color: #999;
+		    font-size: 14px;
+		    padding-left: 23px;
+		    text-transform: capitalize;
+		    font-weight: 500;
+		}
+		.check_box input[type="checkbox"]:checked ~ .ch_box {
+		    border-color: #16a9ff;
+		}
+		.check_box input[type="checkbox"]:checked ~ .ch_box:after {
+		    visibility: visible;
+		    opacity: 1;
+		    transform: rotate(-31deg);
+		    -webkit-transform: rotate(-31deg);
+		    -moz-transform: rotate(-31deg);
+		    -ms-transform: rotate(-31deg);
+		    -o-transform: rotate(-31deg);
+		}
+		.check_box input[type="checkbox"]:checked ~ .ch_text {
+		    color: #16a9ff;
+		}
+		/*== check box css ==*/
+	</style>
+  </head>
+  <body>
+  	<div class="wrapper">
+	  	<div class="container">
+		  	<div class="croppart">
+		  		<label class="library_image_upload">
+		  			<input type="file" name="upload_file" class="upload_file">
+		  			upload image
+		  		</label>
+		  	</div>
+		  	<!-- select dropdown -->
+			<div class="select_dropdown_wrap">
+		        <div class="select_drop_h">Select Value 
+		           <span class="drop_icon"><i class="fa fa-angle-down"></i></span>
+		        </div>
+			  	<div class="select_dropdown">
+	              <ul class="select_dropdown_list">
+	                <li class="check_box">
+	                    <label>
+	                      <input type="checkbox" name="ua_id[]" value="one">
+	                      <span class="ch_box"></span>
+	                      <span class="ch_text">one</span>
+	                    </label>
+	                </li>
+	                <li class="check_box">
+	                    <label>
+	                      <input type="checkbox" name="ua_id[]" value="two">
+	                      <span class="ch_box"></span>
+	                      <span class="ch_text">two</span>
+	                    </label>
+	                </li> 
+	                <li class="check_box">
+	                    <label>
+	                      <input type="checkbox" name="ua_id[]" value="three">
+	                      <span class="ch_box"></span>
+	                      <span class="ch_text">three</span>
+	                    </label>
+	                </li> 
+	              </ul>
+	            </div>
+	       	</div>
+	       	<!-- select dropdown -->
+	  	</div>
+  	</div>
+	<!-- jquery library js -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jquery library js -->
+	<!-- bootstrap js file-->
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<!-- bootstrap js file-->
+	<!-- owl-carousel js file-->
+	<script src="js/plugins/owl_carousel/owl.carousel.min.js"></script>
+    <!-- owl-carousel js file-->
+    <!-- gallery js file-->
+	<script src="js/plugins/gallery/jquery.magnific-popup.js"></script>
+    <!-- gallery js file-->
+    <!-- jquery ui js file-->
+	<script src="js/plugins/jquery_ui/jquery-ui.min.js"></script>
+    <!-- jquery ui js file-->
+	<!-- bootstrap selectpicker -->
+    <script src="js/plugins/selectpicker/bootstrap-select.js"></script>
+    <!-- bootstrap selectpicker -->
+    <!-- color picker -->
+    <script src="js/plugins/colorpicker/js/colorpicker.js"></script>
+    <script src="js/plugins/colorpicker/js/eye.js"></script>
+    <script src="js/plugins/colorpicker/js/layout.js"></script>
+    <!-- color picker -->
+	<script src="js/custom_script.js"></script>
+	<script type="text/javascript">
+	  jQuery('.select_drop_h').on('click', function(){
+	    jQuery(this).next(".select_dropdown").slideToggle();
+	  });
+	  //get value of checkbox
+	  // $('.check_box input').on('change', function(){
+	  // 	var checked_val = $(this).val();
+	  // 	if ($(".check_box input").is(":checked")) {
+	  //    $(".select_drop_h").text(checked_val);
+	  //   }
+	  //   else if($(".check_box input").is(":not(:checked)")){
+	  //   	$(".select_drop_h").text('Select Value');
+	  //   }
+	  // });
+
+  	 $('.select_dropdown_list .check_box').on('click', function(){
+    	var checked_val = [];
+	    $('.check_box input').each(function(i){
+	        if ($(this).is(":checked")) {	
+	          checked_val[i] = $(this).val();
+	         $(".select_drop_h").text(checked_val);
+	    	}
+	    	else{
+	    		//$(".select_drop_h").text("not checked");
+	    	}
+	  	});
+  	});
+	</script>
+	</body>
+</html>

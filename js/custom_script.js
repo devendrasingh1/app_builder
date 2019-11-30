@@ -23,6 +23,24 @@
 		$(this).addClass("active");
 		$("#"+tab_data).addClass("active");
 	});
+
+	//app tab bar
+	$('.app_tabbar .tab_link').on('click', function(){
+		$(".app_screen_tabs").removeClass("active");
+		var tab_data = $(this).attr("data-tab");
+		$('.app_tabbar .tab_link').removeClass("active");
+		$(this).addClass("active");
+		$("#"+tab_data).addClass("active");
+		$(".ap_sidbarmenu").removeClass("open");
+	});
+	//app sidebar menu open js
+	$('.side_menu_open').on('click', function(){
+		$(".ap_sidbarmenu").addClass("open");
+	});
+	//app sidebar menu close js
+	$('.side_menu_close').on('click', function(){
+		$(".ap_sidbarmenu").removeClass("open");
+	});
 	//filter tabs Menu
 	$('.filter_tag li').on('click', function(){
 		$(".filter_tab_content").removeClass("active");
@@ -125,33 +143,28 @@
 			nav:false,
 		});
 	}
-	//home slider
-	if ($(".app_slider").length > 0) {
-		$(".app_slider").owlCarousel({
+	//app gallery slider
+	if ($(".app_gallery_slider").length > 0) {
+		$(".app_gallery_slider").owlCarousel({
 			mode:"fade",
-			items:3,
-			loop:true,
-			margin:10,
+			items:1,
+			loop:false,
+			margin:0,
 			autoplay:false,
 			autoplayTimeout:3000,
 			autoplaySpeed:1500,
-			smartSpeed:1500,
+			smartSpeed:1000,
 			dots:true,
 			nav:false,
-			responsive:{
-				 0:{
-		            items:1
-		        },
-		        992:{
-		            items:2
-		        },
-		        1100:{
-		            items:3
-		        }
-		    }
 		});
 	}
-	
+	//gallery modal close
+	$('.gallery_link').on('click', function(){
+		$(".gallery_modal").addClass("modal_open");
+	});
+	$('.modal_close').on('click', function(){
+		$(this).parents(".gallery_modal").removeClass("modal_open");
+	});
 	//progressbar js
 	$(window).on('load', function() {
 		$(".progress_panel").each(function() {
@@ -323,7 +336,7 @@
 
 	});
 	//offset menu
-	$('.tab_overlay_links').parent('li').hover(function() {
+	$('.tabbar_menu li').hover(function() {
 	    var menu = $(this).find(".tab_overlay_links");
 	    var menupos = $(menu).offset();
 	    if (menupos.left + menu.width() > $(window).width()) {
@@ -333,6 +346,8 @@
 	    	$(".tab_overlay_links").removeClass("offset_menu");
 	    }
 	});
+	//gallery popup js
+
 })(jQuery);
 //copy to clip board on click
 function copybutton() {
