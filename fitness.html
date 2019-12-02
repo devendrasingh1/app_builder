@@ -163,34 +163,15 @@
 												<li class="drag_tabs">
 													<div class="drag_tabs_text">
 														<span class="icon">
-															<i class="fas fa-image"></i>
+															<i class="fas fa-hamburger"></i>
 														</span>
-														<span class="txts">gallery</span>
-														<span class="tab_types">gallery</span>
+														<span class="txts">Food Plan</span>
+														<span class="tab_types">Food Plan</span>
 													</div>
 													<!-- tab content edit links -->
 													<div class="tab_overlay_links">
 														<div class="overlay_links">
-															<a href=""><i class="fas fa-pencil-alt"></i>Edit Content</a>
-															<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
-															<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
-															<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
-														</div>
-													</div>
-													<!-- tab content edit links -->
-												</li>
-												<li class="drag_tabs">
-													<div class="drag_tabs_text">
-														<span class="icon">
-															<i class="fas fa-info-circle"></i>
-														</span>
-														<span class="txts">About</span>
-														<span class="tab_types">About</span>
-													</div>
-													<!-- tab content edit links -->
-													<div class="tab_overlay_links">
-														<div class="overlay_links">
-															<a href="app_build.html"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+															<a href="#" data-toggle="modal" data-target="#content_continue_modal"><i class="fas fa-pencil-alt"></i>Edit Content</a>
 															<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
 															<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
 															<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
@@ -229,21 +210,31 @@
 														<span class="txts">gallery</span>
 														<span class="tab_types">gallery</span>
 													</div>
+													<!-- tab content edit links -->
+													<div class="tab_overlay_links">
+												        <div class="overlay_links">
+												            <a href="#" data-toggle="modal" data-target="#library_modal"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+												            <a href="#" data-toggle="modal" data-target="#tb_setting_popups"><i class="fas fa-user-cog"></i>Tab setting</a>
+												            <a href="#"><i class="far fa-clone"></i>Clone Tab</a>
+												            <a href="#"><i class="far fa-trash-alt"></i>Delete</a>
+												        </div>
+												    </div>
+												    <!-- tab content edit links -->
 												</li>
 												<li>
 													<div class="drag_tabs_text">
 														<span class="icon">
-															<i class="fas fa-car"></i>
+															 <i class="fas fa-dumbbell"></i>
 														</span>
-														<span class="txts">Vehicle</span>
-														<span class="tab_types">Vehicle</span>
+														<span class="txts">Work out</span>
+														<span class="tab_types">Work out</span>
 													</div>
 													<!-- tab content edit links -->
 													<div class="tab_overlay_links">
 														<div class="overlay_links">
-															<a href="#" data-toggle="modal" data-target="#vehical_modal"><i class="fas fa-pencil-alt"></i>Edit Content</a>
+															<a href="#" data-toggle="modal" data-target="#content_continue_modal"><i class="fas fa-pencil-alt"></i>Edit Content</a>
 															<a href="#"><i class="far fa-clone"></i>Clone Tab</a>
-															<a href="#" data-toggle="modal" data-target="#tb_setting_popups"><i class="fas fa-user-cog"></i>Tab setting</a>
+															<a href="#"><i class="fas fa-user-cog"></i>Tab setting</a>
 															<a href="#"><i class="far fa-trash-alt"></i>Delete</a>
 														</div>
 													</div>
@@ -335,10 +326,36 @@
 												</div>
 											</div>
 											<div class="app_panel app_panel_full">
+												<!-- App Splash screen start -->
+												<div class="ap_startup_screen">
+													<!-- screen one -->
+													<div class="screen_start active">
+														<div class="content">
+															<h5>Legal Information</h5>
+															<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,</p>
+														</div>
+														<div class="splash_btn_btm">
+														  <button type="button" class="scrn_btn ap_next_screen">Next</button>
+														</div>
+													</div>
+													<!-- screen one -->
+													<!-- screen two -->
+													<div class="screen_start">
+														<div class="content">
+															<h5>App introduction</h5>
+															<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+														</div>
+														<div class="splash_btn_btm">
+														  <button type="button" class="scrn_btn ap_start_screen">Get Started</button>
+														</div>
+													</div>
+													<!-- screen one -->
+												</div>
+												<!-- App Splash screen End -->
 												<!-- Home Tab start -->
 												<div class="app_screen_tabs active" id="home_tab">
 													<div class="home_tab_screen">
-														<img src="images/home/car_home_bg.jpg" alt="" class="img-fluid">
+														<img src="images/home/fitness_home_bg.jpg" alt="" class="img-fluid">
 													</div>
 												</div>
 												<!-- Home Tab end -->
@@ -348,17 +365,22 @@
 													<div class="ap_gallery_img">
 														<div class="ap_gallery_col">
 														  <span class="gallery_link">
-															<img src="images/gallery/car/img_1.jpg">
+															<img src="images/gallery/fitness/img_1.jpg">
 														  </span>
 														</div>
 														<div class="ap_gallery_col">
 														  <span class="gallery_link">
-															<img src="images/gallery/car/img_2.jpg">
+															<img src="images/gallery/fitness/img_2.jpg">
 														  </span>
 														</div>
 														<div class="ap_gallery_col">
 														  <span class="gallery_link">
-															<img src="images/gallery/car/img_3.jpg">
+															<img src="images/gallery/fitness/img_3.jpg">
+														  </span>
+														</div>
+														<div class="ap_gallery_col">
+														  <span class="gallery_link">
+															<img src="images/gallery/fitness/img_4.jpg">
 														  </span>
 														</div>
 													</div>
@@ -370,139 +392,72 @@
 														</span>
 													  <div class="app_gallery_slider owl-carousel owl-theme">
 														<div class="item">
-															<img src="images/gallery/car/big_1.jpg" alt="">
+															<img src="images/gallery/fitness/big_1.jpg" alt="">
 														</div>
 														<div class="item">
-															<img src="images/gallery/car/big_2.jpg" alt="">
+															<img src="images/gallery/fitness/big_2.jpg" alt="">
 														</div>
 														<div class="item">
-															<img src="images/gallery/car/big_3.jpg" alt="">
+															<img src="images/gallery/fitness/big_3.jpg" alt="">
+														</div>
+														<div class="item">
+															<img src="images/gallery/fitness/big_4.jpg" alt="">
 														</div>
 													  </div>
 													</div>
 													<!-- gallery modal slider -->
 												</div>
 												<!-- Gallery Tab end -->
-												<!-- Vehicle Tab start -->
-												<div class="app_screen_tabs" id="vehicle_tab">
-													<ul class="vehicle_list">
-														<li>
-															<div class="image">
-																<img src="images/car/car_1.jpg" alt="" class="img-fluid">
-															</div>
-															<div class="cont_text">
-																<h5>BMW</h5>
-															</div>
-															<div class="list_detail_icon">
-																<i class="fas fa-chevron-right"></i>
-															</div>
-														</li>
-														<li>
-															<div class="image">
-																<img src="images/car/car_2.jpg" alt="" class="img-fluid">
-															</div>
-															<div class="cont_text">
-																<h5>Toyoto</h5>
-															</div>
-															<div class="list_detail_icon">
-																<i class="fas fa-chevron-right"></i>
-															</div>
-														</li>
-														<li>
-															<div class="image">
-																<img src="images/car/car_3.jpg" alt="" class="img-fluid">
-															</div>
-															<div class="cont_text">
-																<h5>Audi</h5>
-															</div>
-															<div class="list_detail_icon">
-																<i class="fas fa-chevron-right"></i>
-															</div>
-														</li>
-													</ul>
-													<!-- listing detail start -->
-													<div class="vehicle_listing_desc">
-													   <div class="listing_desc_banner">
-														  <div class="banner_img">
-														  	<span class="back_btn">
-														  		Back
-														  	</span>
-															<img src="images/banner/car_bg.jpg" alt="Banner">
-															<div class="prop_name">BMW</div>
-														  </div>
-														</div>
-														<div class="vehicle_desc_wrap">
-															<ul class="vehicle_descr">
-																<li>
-																	<span class="icon">
-																	  <i class="fas fa-money-bill-alt"></i>
-																	</span>
-																	<span class="text">
-																		Price: $500
-																	</span>
-																</li>
-																<li>
-																	<span class="icon">
-																	  <i class="fas fa-map-marker-alt"></i>
-																	</span>
-																	<span class="text">
-																		Indore raod ujjain, 456001
-																	</span>
-																</li>
-																<li>
-																	<span class="icon">
-																	  <i class="fas fa-phone-alt"></i>
-																	</span>
-																	<span class="text">
-																		<a href="#">
-																			9977991234
-																		</a>
-																	</span>
-																</li>
-																<li>
-																	<span class="icon">
-																	  <i class="fas fa-globe"></i>
-																	</span>
-																	<span class="text">
-																		<a href="#">
-																			www.cardemo.com
-																		</a>
-																	</span>
-																</li>
-																<li>
-																	<span class="icon">
-																	  <i class="far fa-envelope"></i>
-																	</span>
-																	<span class="text">
-																		<a href="#">
-																			cardemo@gmail.com
-																		</a>
-																	</span>
-																</li>
-															</ul>
-															<div class="vehicle_other_desc">
-																<h5>Description</h5>
-																<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-																</p>
-															</div>
-														</div>
-													</div>
-													<!-- listing detail End -->
+												<!-- Workout Tab start -->
+												<div class="app_screen_tabs" id="workout_tab">
+												   <div class="tab_content_page">
+												   		<div class="tab_custom_html">
+												   			<h4>Weekly Schedule</h4>
+												   			<p><span>Monday</span>
+												   				Chest & Triceps
+												   			</p>
+												   			<p><span>Tuesday</span>
+												   				Lats & Biceps
+												   			</p>
+												   			<p><span>Wednesday</span>
+												   				Shoulder & legs
+												   			</p>
+												   			<p><span>Thursday</span>
+												   				Triceps & Abs
+												   			</p>
+												   			<p><span>Friday</span>
+												   				Back & Shoulder
+												   			</p>
+												   			<p><span>Saturday</span>
+												   				Legs & Chest
+												   			</p>
+												   			<div class="video_dv_inr">
+												   			  <iframe src="https://www.youtube.com/embed/O2__sgwpFrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+												   			</div>
+												   		</div>
+												   </div>
 												</div>
-												<!-- Vehicle Tab end -->
-												<!-- About Tab start -->
+												<!-- Workout Tab end -->
+												<!-- Food Plan Tab start -->
+												<div class="app_screen_tabs" id="foodplan_tab">
+													<div class="home_tab_screen">
+														<img src="images/home/food_plan.jpg" alt="" class="img-fluid">
+													</div>
+												</div>
+												<!-- Home Tab end -->
+												<!-- Food Plan Tab start -->
 												<div class="app_screen_tabs" id="about_tab">
 													<div class="about_container">
 														<div class="about_banner">
-															<div class="abt_banner_bg" style="background-image:url(images/banner/car_bg.jpg); ">
+															<div class="abt_banner_bg" style="background-image:url(images/banner/fitness_banner.jpg); ">
 																<div class="ovelay"></div>
 																<div class="bnr_app_container">
 																	<span class="ap_icon">
-																	  <i class="fa fa-car"></i>
+																	  <i class="fas fa-dumbbell"></i>
 																	</span>
 																	<div class="ap_text">
-																	  <h5>Car App</h5>
-																	  <p class="ap_desc">The best Cars of the city</p>
+																	  <h5>Fitness App</h5>
+																	  <p class="ap_desc">The Best Fitness Gym</p>
 																	</div>
 																</div>
 															</div>
@@ -514,9 +469,7 @@
 															<div class="items">
 															  <h5>Address</h5>
 															  <ul>
-																<li>indore</li>
-																<li>456621</li>
-																<li>Ab Raod indore</li>
+																<li>2802  Star Route Burr Ridge, IL</li>
 															  </ul>
 															</div>
 														</div>
@@ -556,7 +509,7 @@
 														<div class="add_info_bx">
 														  <h5>About Us</h5>
 														  <ul>
-															<li>Lorem ipsum doller init</li>
+															<li>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete</li>
 														  </ul>
 														</div>
 														<div class="add_info_bx">
@@ -572,31 +525,15 @@
 																<table class="table">
 																	<tr>
 																		<td>Monday</td>
-																		<td>09:00-17:00</td>
+																		<td>05:00-8:00, 18:00-21:00</td>
 																	</tr>
 																	<tr>
 																		<td>Tuesday</td>
-																		<td>09:00-17:00</td>
+																		<td>05:00-8:00, 18:00-21:00</td>
 																	</tr>
 																	<tr>
 																		<td>Wednesday</td>
-																		<td>09:00-17:00</td>
-																	</tr>
-																	<tr>
-																		<td>Thursday</td>
-																		<td>09:00-17:00</td>
-																	</tr>
-																	<tr>
-																		<td>Friday</td>
-																		<td>09:00-17:00</td>
-																	</tr>
-																	<tr>
-																		<td>Saturday</td>
-																		<td>09:00-17:00</td>
-																	</tr>
-																	<tr>
-																		<td>Sunday</td>
-																		<td>09:00-17:00</td>
+																		<td>05:00-8:00, 18:00-21:00</td>
 																	</tr>
 																</table>
 															</div>
@@ -607,9 +544,9 @@
 											</div>
 											<div class="app_tabbar ap_sidbarmenu">
 												<div class="text-left">
-													<span class="side_menu_close">
-														<i class="fas fa-arrow-left"></i>
-													</span>
+												    <span class="side_menu_close">
+												        <i class="fas fa-arrow-left"></i>
+												    </span>
 												</div>
 												<ul class="tabbar_menu">
 													<li class="active tab_link" data-tab="home_tab">
@@ -628,12 +565,20 @@
 															<span class="txts">gallery</span>
 														</div>
 													</li>
-													<li class="tab_link" data-tab="vehicle_tab">
+													<li class="tab_link" data-tab="workout_tab">
 														<div>
 														  <span class="icon">
-															 <i class="fas fa-car"></i>
+															 <i class="fas fa-dumbbell"></i>
 														  </span>
-															<span class="txts">vehicle</span>
+															<span class="txts">Work out</span>
+														</div>
+													</li>
+													<li class="tab_link" data-tab="foodplan_tab">
+														<div>
+														  <span class="icon">
+															 <i class="fas fa-hamburger"></i>
+														  </span>
+															<span class="txts">Food Plan</span>
 														</div>
 													</li>
 													<li class="tab_link" data-tab="about_tab">
@@ -2366,7 +2311,7 @@
 								<div class="app_screen">
 									<div class="app_screen_inr">
 										<div class="app_panel">
-											<div class="home_tab_slides" style="background-image:url('images/home/car_home_bg.jpg'); ">
+											<div class="home_tab_slides" style="background-image:url('images/home/fitness_home_bg.jpg'); ">
 											</div>	
 										</div>
 									</div>
@@ -2622,7 +2567,7 @@
 								<div class="form_group listing_header_img">
 									<label class="form_label">Listing Header Image</label>
 									<div class="input_group">
-										<div class="image_upload_box" style="background-image:url(images/banner/car_bg.jpg);">
+										<div class="image_upload_box" style="background-image:url(images/banner/fitness_banner.jpg);">
 											<a href="#" class="img_overlay" data-toggle="modal"data-target="#library_modal">
 												<span class="upload_icon">
 													<i class="far fa-edit"></i>

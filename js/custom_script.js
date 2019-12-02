@@ -313,21 +313,6 @@
 		var bgcolor = $(this).val();
 		$(".app_header").css('background-color',bgcolor);
 	});
-	//change color of Tab bar
-	$('.color_picker input[name="tab_color"]').on('change, blur', function(){
-		var bgcolor1 = $(this).val();
-		$(".app_tabbar").css('background-color',bgcolor1);
-	});
-	//change color of Tab bar icon
-	$('.color_picker input[name="tab_icon_color"]').on('change, blur', function(){
-		var tab_color = $(this).val();
-		$(".tabbar_menu li").css('color',tab_color);
-	});
-	//change color of active Tab bar icon
-	$('.color_picker input[name="tab_icon_active"]').on('change, blur', function(){
-		var tab_color_a = $(this).val();
-		$(".tabbar_menu li.active").css('color',tab_color_a);
-	});
 	//change body font on selectbox
 	$(".select_fonts").on('change', function(){
 		var font_val = $(this).val();
@@ -346,8 +331,15 @@
 	    	$(".tab_overlay_links").removeClass("offset_menu");
 	    }
 	});
-	//gallery popup js
-
+	//splash screen js
+	$('.ap_next_screen').on('click', function() {
+		$(this).parents(".screen_start").removeClass("active");
+		$(this).parents(".screen_start").next().addClass("active");
+	});
+	$('.ap_start_screen').on('click', function() {
+		$(this).parents(".screen_start").removeClass("active");
+		$(this).parents(".ap_startup_screen").hide(300);
+	});
 })(jQuery);
 //copy to clip board on click
 function copybutton() {

@@ -1196,7 +1196,7 @@ table tr td {
 /*====== app builder tabs css =====*/
 /*====== app screen css start =====*/
 .app_build_img {
-    background: url(../images/app_mockup.png) no-repeat;
+    background: url(../images/editor/app_mockup.png) no-repeat;
     background-size: contain;
 /*    overflow: hidden;*/
     text-align: left;
@@ -1765,7 +1765,7 @@ table tr td {
     width: 200px;
 }
 .preview_img{
-    background: url(../images/app_mockup.png) no-repeat;
+    background: url(../images/editor/app_mockup.png) no-repeat;
     background-size: contain;
     overflow: hidden;
     text-align: left;
@@ -2002,8 +2002,8 @@ table tr td {
 .modal_dialog_middle {
     max-width: 800px;
 }
-.tab_direction_modal .modal-body {
-    max-height: 550px;
+.modal .modal-body {
+    max-height: 500px;
     overflow-y: auto;
 }
 .app_modules_head{
@@ -3595,11 +3595,24 @@ table tr td {
 .abt_banner_bg {
     display: inline-block;
     width: 100%;
-    background: url(../images/banner/car_bg.jpg) no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
+    background-position: center center;
     position: relative;
     min-height: 100px;
+    z-index: 1;
+}
+.ovelay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+}
+.abt_banner_bg .ovelay {
+    z-index: -1;
 }
 .bnr_app_container {
     display: inline-block;
@@ -3615,7 +3628,7 @@ table tr td {
     background: #8493dc;
     color: #fff;
     text-align: center;
-    font-size: 30px;
+    font-size: 21px;
     border-radius: 50%;
 }
 .bnr_app_container .ap_text h5 {
@@ -3845,6 +3858,7 @@ table tr td {
     -webkit-transition: all ease-in 0.3s;
     -moz-transition: all ease-in 0.3s;
     overflow-y: auto;
+    z-index: 10;
 }
 .app_screen .ap_sidbarmenu.open {
     transform: translateX(0px);
@@ -3894,11 +3908,12 @@ table tr td {
     display: inline-block;
     background: #8493dc;
     color: #fff;
-    height: 30px;
-    line-height: 30px;
-    padding: 0 19px;
+    height: 28px;
+    line-height: 29px;
+    padding: 0 14px;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 13px;
 }
 .listing_desc_banner{
     display: inline-block;
@@ -4111,3 +4126,73 @@ table tr td {
 .add_vehicle_form .form_group.listing_header_img {
     padding-left: 20px;
 }
+
+/*===== Fitness css ====*/
+.tab_custom_html {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+}
+.tab_custom_html h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.tab_custom_html p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.tab_custom_html p span {
+    color: #000;
+}
+.video_dv_inr{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+.video_dv_inr iframe{
+    width: 100%;
+    height: 100px;
+    border:none;
+}
+/*===== Fitness css ====*/
+/*===== App startup screen css ====*/
+.ap_startup_screen {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+}
+.ap_startup_screen .screen_start {
+    float: left;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 10px 10px 50px;
+    display: none;
+    position: relative;
+}
+.ap_startup_screen .screen_start.active{
+  display: block;
+}
+.screen_start .splash_btn_btm {
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    text-align: center;
+}
+.screen_start .scrn_btn {
+    display: inline-block;
+    background-color: #8493dc;
+    color: #fff;
+    border: none;
+    padding: 0 25px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 4px;
+}
+/*===== App startup screen css ====*/

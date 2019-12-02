@@ -91,6 +91,24 @@
                 $(el).ColorPickerHide();
             }
 		});
+		//ck Editor color change
+		$('.editor_bg').ColorPicker({
+			backgroundColor: '#555555',
+			onShow: function (colpkr) {
+				$(colpkr).fadeIn(500);
+				return false;
+			},
+			onHide: function (colpkr) {
+				$(colpkr).fadeOut(500);
+				return false;
+			},
+			onChange: function (hsb, hex, rgb) {
+				$('.ck-editor__editable').css('backgroundColor', '#' + hex);
+			},
+			onSubmit:function (hsb, hex, rgb,el) {
+                $(el).ColorPickerHide();
+            }
+		});
 		//Tab bar icon color change
 		$('.nav_line_color').ColorPicker({
 			backgroundColor: '#000000',
