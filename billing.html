@@ -216,7 +216,8 @@
 											<h4>Choose a way to pay</h4>
 										</div>
 										<div class="billing_btns input_group">
-											<a href="#" class="green_button"><i class="fas fa-credit-card"></i>card</a>
+											<a href="#" class="green_button" data-toggle="modal" data-target="#card_payment_modal">
+												<i class="fas fa-credit-card"></i>card</a>
 											<a href="#" class="green_button"><i class="fab fa-paypal"></i>Paypal</a>
 										</div>
 									</div>
@@ -246,6 +247,60 @@
 		<!-- dashboard content end -->
 	</div>
 	<!-- Dashboard warppper Start -->
+	<!-- add/ Edit Vehicle Modal start -->
+	<div id="card_payment_modal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+			<div class="app_modules_head">
+				<h5>Pay with card</h5>
+				<span class="close" data-dismiss="modal">&times;</span>
+			</div>
+      		<div class="modal-body">
+      			<div class="dashboard_form card_payment_form">
+					<div class="card_form">
+						<form>
+							<div class="form_group">
+								<label class="form_label">card holder name</label>
+								<div class="input_group">
+									<input type="text" name="card_name" placeholder="John Taylor">
+								</div>
+							</div>
+							<div class="form_group">
+								<label class="form_label">card number</label>
+								<div class="input_group">
+									<input type="text" name="card_n" placeholder="XXXX XXXX">
+								</div>
+							</div>
+							<div class="form_group">
+								<label class="form_label">Amount</label>
+								<div class="input_group">
+								  <input type="text" name="ammount" placeholder="Enter Ammount">
+								</div>
+							</div>
+							<div class="form_group col_50">
+								<label class="form_label">Expiration Date</label>
+								<div class="input_group">
+									<input type="text" name="user_id" placeholder="mm/yy">
+								</div>
+								</div>
+							<div class="form_group col_50">
+								<label class="form_label">CVV</label>
+								<div class="input_group">
+									<input type="text" name="cvv" placeholder="Enter CVV">
+								</div>
+							</div>
+							<div class="form_group">
+								<input type="submit" class="green_button pay_btn" value="Add Money">
+							</div>
+						</form>
+					</div>
+				</div>
+	      	</div>
+	    </div>
+	  </div>
+	</div>
+	<!-- add/ Edit Vehicle modal End -->
 	<!-- Header End -->
 	<!-- jquery library js -->
 	<script src="js/jquery.min.js"></script>
