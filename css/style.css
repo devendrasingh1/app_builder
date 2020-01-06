@@ -1249,6 +1249,7 @@ table tr td {
     overflow-y: auto;
 }
 .app_screen .app_panel_full {
+    height: 434px;
     max-height: 434px;
 }
 /*=== panel app list ===*/
@@ -1495,6 +1496,9 @@ table tr td {
 #library_modal {
     z-index: 1100;
 }
+#image_upload_modal{
+    z-index: 11000;
+}
 .library_modal .modal-dialog {
     max-width: 800px;
     margin: 20px auto;
@@ -1512,6 +1516,7 @@ table tr td {
 .libray_bottom {
     display: inline-block;
     width: 100%;
+    margin-top: 10px;
 }
 .libray_bottom .close_modal {
     cursor: pointer;
@@ -1628,7 +1633,7 @@ table tr td {
     display: inline-block;
     width: 100%;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
     max-height: 300px;
     overflow-y: auto;
     overflow-x: hidden;
@@ -1655,6 +1660,10 @@ table tr td {
     max-width: 100%;
     max-height: 100%;
     display: inline-block;
+}
+#image_upload_modal .libray_middle {
+    max-height: 500px;
+    padding-top: 10px;
 }
 /*====== library popup middle end =====*/
 /*====== create app css end =====*/
@@ -1762,9 +1771,13 @@ table tr td {
 }
 .temp_grid.active{
     border-color: #8493dc;
+    background: #8493dc;
 }
 .temp_grid.active .temp_box .temp_icon{
-    color: #8493dc;
+    color: #ffffff;
+}
+.temp_grid.active .temp_box .temp_title{
+    color: #ffffff;
 }
 .temp_preview {
     float: right;
@@ -3582,10 +3595,11 @@ table tr td {
 }
 
 /*===== Globel setting css End =====*/
-.app_screen_tabs{
+.app_screen_tabs {
     width: 100%;
     float: left;
     display: none;
+    height: 100%;
 }
 .app_screen_tabs.active{
     display: inline-block;
@@ -4134,10 +4148,15 @@ table tr td {
 }
 
 /*===== Fitness css ====*/
+.tab_content_page {
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+}
 .tab_custom_html {
     display: inline-block;
     width: 100%;
-    padding: 15px;
+    padding: 15px 10px;
     text-align: center;
 }
 .tab_custom_html h4 {
@@ -4154,6 +4173,13 @@ table tr td {
 .tab_custom_html p span {
     color: #000;
 }
+
+.tab_custom_html.text_white * {
+    color: #fff;
+}
+.tab_custom_html .full_width{
+    display: block;
+}
 .video_dv_inr{
     display: inline-block;
     width: 100%;
@@ -4169,6 +4195,15 @@ table tr td {
     text-align: center;
     display: inline-block;
     width: 100%;
+}
+.tab_content_bg_img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-y: auto;
 }
 /*===== Fitness css ====*/
 /*===== App startup screen css ====*/

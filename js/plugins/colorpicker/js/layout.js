@@ -103,7 +103,7 @@
 				return false;
 			},
 			onChange: function (hsb, hex, rgb) {
-				$('.ck-editor__editable').css('backgroundColor', '#' + hex);
+				$('.app_intro_editor .ck-editor__editable').css('backgroundColor', '#' + hex);
 			},
 			onSubmit:function (hsb, hex, rgb,el) {
                 $(el).ColorPickerHide();

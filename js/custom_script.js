@@ -340,6 +340,11 @@
 		$(this).parents(".screen_start").removeClass("active");
 		$(this).parents(".ap_startup_screen").hide(300);
 	});
+	//url file upload js
+	$(".upload_url_btn").on('change',function(){
+	    var file_path = $(this)[0].files[0].name;
+	    $(".url_path_inpt").val(file_path);
+	});
 })(jQuery);
 //copy to clip board on click
 function copybutton() {

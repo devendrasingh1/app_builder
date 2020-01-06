@@ -367,10 +367,7 @@
 									<li data-tab="splash_screen">Add Banner</li>
 									<li data-tab="add_banner">splash screen</li>
 								</ul>
-								<label class="upload_img_btn">
-									<input type="file" name="uploadfile">
-									Upload Image
-								</label>
+								<a href="#" class="upload_img_btn" data-toggle="modal" data-target="#image_upload_modal">Upload Image</a>
 							</div>
 						</div>
 						<!-- media search end -->
@@ -430,6 +427,44 @@
 	  </div>
 	</div>
 	<!-- library Modal end -->
+	<!-- Image upload Modal -->
+	<div id="image_upload_modal" class="library_modal modal fade" role="dialog">
+	  <div class="modal-dialog">
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-body">
+		    <div class="color_box">
+				<div class="box_head">
+					Select image To Upload
+				</div>
+				<div class="c_box_body">
+					<div class="c_box_body_inr">
+						<!-- library Middle start -->
+						<div class="libray_middle">
+							<div class="upload_demo_wrap">
+								<div class="upload_demo">
+								</div>
+							</div>
+						</div>
+						<!-- library Middle end -->
+						<!-- library bottom start -->
+						<div class="libray_bottom text-center">
+							<label class="upload_img_btn">
+								<span>upload image</span>
+								<input type="file" id="upload_btn" value="Choose a file" accept="image/*" />
+							</label>
+							<button type="button" class="green_button upload_save">save</button>
+							<span class="close_modal green_button">Close</span>
+						</div>
+						<!-- library bottom end -->
+					</div>
+				</div>
+			</div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- image upload Modal end -->
 	<!-- Dashboard warppper Start -->
 	<!-- jquery library js -->
 	<script src="js/jquery.min.js"></script>
@@ -450,9 +485,10 @@
 	<!-- bootstrap selectpicker -->
     <script src="js/plugins/selectpicker/bootstrap-select.js"></script>
     <!-- bootstrap selectpicker -->
-    <!-- color picker -->
-    <script src="js/plugins/color-picker/jquery.colorpicker.bygiro.min.js"></script>
-    <!-- color picker -->
+    <!-- Croppie Master -->
+	<script src="js/plugins/cropie/croppie.js"></script>
+	<script src="js/plugins/cropie/demo.js"></script>
+    <!-- Croppie Master -->
 	<script src="js/custom_script.js"></script>
 	<script type="text/javascript">
 	//change splash screen on mouseover

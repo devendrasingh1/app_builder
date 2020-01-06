@@ -1,4 +1,4 @@
-f<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 	<title>Apps Builder HTML</title>
@@ -159,17 +159,24 @@ f<!DOCTYPE html>
 		    color: #16a9ff;
 		}
 		/*== check box css ==*/
+		.image_crop_div{
+			display: inline-block;
+			width: 100%;
+		}
+		.center_dv{
+			max-width: 500px;
+			margin: auto;
+		}
+		.crop_imagebox{
+			display: inline-block;
+			width: 100%;
+			height: 400px;
+		}
 	</style>
   </head>
   <body>
   	<div class="wrapper">
 	  	<div class="container">
-		  	<div class="croppart">
-		  		<label class="library_image_upload">
-		  			<input type="file" name="upload_file" class="upload_file">
-		  			upload image
-		  		</label>
-		  	</div>
 		  	<!-- select dropdown -->
 			<div class="select_dropdown_wrap">
 		        <div class="select_drop_h">Select Value 
@@ -202,6 +209,28 @@ f<!DOCTYPE html>
 	            </div>
 	       	</div>
 	       	<!-- select dropdown -->
+	       	<div>
+	       		<div class="my_datepicker"></div>
+	       	</div>
+	       	<div class="image_crop_div">
+	       		<div class="center_dv">
+	       			<div class="crop_imagebox" >
+	       				<div class="upload-msg">
+							Upload a file to start cropping
+						</div>
+						<div class="upload">
+							<div class="upload_demo"></div>
+						</div>
+	       			</div>
+	       			<div class="actions">
+   						<label class="">
+							<span>Upload</span>
+							<input type="file" id="upload_btn" value="Choose a file" accept="image/*" style="display: none;" />
+						</label>
+						<button class="upload_save">Result</button>
+					</div>
+	       		</div>
+	       	</div>
 	  	</div>
   	</div>
 	<!-- jquery library js -->
@@ -228,22 +257,15 @@ f<!DOCTYPE html>
     <script src="js/plugins/colorpicker/js/eye.js"></script>
     <script src="js/plugins/colorpicker/js/layout.js"></script>
     <!-- color picker -->
+    <!-- Croppie Master -->
+	<script src="js/plugins/cropie/croppie.js"></script>
+	<script src="js/plugins/cropie/demo.js"></script>
+    <!-- Croppie Master -->
 	<script src="js/custom_script.js"></script>
 	<script type="text/javascript">
 	  jQuery('.select_drop_h').on('click', function(){
 	    jQuery(this).next(".select_dropdown").slideToggle();
 	  });
-	  //get value of checkbox
-	  // $('.check_box input').on('change', function(){
-	  // 	var checked_val = $(this).val();
-	  // 	if ($(".check_box input").is(":checked")) {
-	  //    $(".select_drop_h").text(checked_val);
-	  //   }
-	  //   else if($(".check_box input").is(":not(:checked)")){
-	  //   	$(".select_drop_h").text('Select Value');
-	  //   }
-	  // });
-
   	 $('.select_dropdown_list .check_box').on('click', function(){
     	var checked_val = [];
 	    $('.check_box input').each(function(i){
@@ -256,6 +278,17 @@ f<!DOCTYPE html>
 	    	}
 	  	});
   	});
+	</script>
+	<script type="text/javascript">
+	//Datepicker
+	if($(".my_datepicker").length > 0){
+		$(".my_datepicker").datepicker({
+		  dateFormat: "dd-mm-yy",
+		    onSelect: function(dateText) {
+			 $(".my_datepicker").datepicker("disabled", true);
+			}
+		});
+	}
 	</script>
 	</body>
 </html>
